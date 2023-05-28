@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #a6d13b;
+  --secondary-color: #8044ff;
+  --tertiary-color: #03012c;
+  --mid-color: #9d9d9d;
+  --light-color: #efefef;
+  --dark-color: #111111;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.highlighted {
+  color: var(--primary-color);
+  font-weight: 700;
+}
