@@ -65,6 +65,42 @@ body {
   }
 }
 
+/* HERO */
+.side {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+.side .hero-title {
+  color: white;
+  margin: 0 15vw;
+  width: 70vw;
+}
+
+#left-side {
+  background-color: var(--primary-color);
+  z-index: 2;
+}
+
+#left-side .fancy {
+  color: var(--secondary-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+}
+
+#right-side {
+  background-color: var(--secondary-color);
+}
+
+#right-side .fancy {
+  color: var(--primary-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+}
+
 /* FOOTER */
 footer {
   background-color: var(--primary-color);
