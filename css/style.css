@@ -9,9 +9,63 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  padding-top: 72px;
 }
 
-.highlighted {
+.primary-color {
   color: var(--primary-color);
-  font-weight: 700;
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+/* COMPANIES CAROUSEL */
+.company-section {
+  position: relative;
+  max-height: 400px;
+}
+
+.company-content {
+  height: 100%;
+  padding: 32px;
+  display: none;
+  animation: fade-out 0.6s ease;
+}
+
+.company-content > div {
+  overflow: auto;
+  height: 100%;
+}
+
+.company-content > div::-webkit-scrollbar {
+  width: 0px;
+}
+
+.company-content[data-status='active'] {
+  display: block;
+  animation: fade-in 0.6s ease;
+  z-index: 2;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
 }

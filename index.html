@@ -19,14 +19,16 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Global Solution | FIAP</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0">
+    <nav
+      class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
           >global&nbsp;<span
             id="decode"
-            class="highlighted"
+            class="fw-bold primary-color"
             data-value="solution"
             >solution</span
           ></a
@@ -65,11 +67,352 @@
         </div>
       </div>
     </nav>
+    <!-- PITCH VIDEO & COMPANIES -->
+    <section class="container-fluid">
+      <div class="row row-cols-1 row-cols-lg-2 bg-black">
+        <div
+          id="companies-indicators"
+          class="col carousel slide border-end border-dark-subtle d-none d-lg-block"
+        >
+          <div id="company-carrousel-indicators" class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#companies-indicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Pitch Video"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#companies-indicators"
+              data-bs-slide-to="1"
+              aria-current="false"
+              aria-label="Microsoft"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#companies-indicators"
+              data-bs-slide-to="2"
+              aria-current="false"
+              aria-label="Kraft Heinz"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#companies-indicators"
+              data-bs-slide-to="3"
+              aria-current="false"
+              aria-label="CropLife International"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#companies-indicators"
+              data-bs-slide-to="4"
+              aria-current="false"
+              aria-label="ONG Banco de Alimentos"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#companies-indicators"
+              data-bs-slide-to="5"
+              aria-current="false"
+              aria-label="Caça-Fome"
+            ></button>
+          </div>
+          <div class="carousel-inner p-4 ratio ratio-16x9">
+            <div class="carousel-item active">
+              <img
+                class="img-fluid position-absolute top-50 start-50 translate-middle"
+                src="./img/logos/fiap-logo.svg"
+                alt="FIAP - Pitch Video"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-fluid position-absolute top-50 start-50 translate-middle"
+                src="./img/logos/microsoft.png"
+                alt="Microsoft"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-fluid position-absolute top-50 start-50 translate-middle"
+                src="./img/logos/kraft-heinz.png"
+                alt="Kraft Heinz"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-fluid position-absolute top-50 start-50 translate-middle"
+                src="./img/logos/crop-life-international.png"
+                alt="CropLife International"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-fluid position-absolute top-50 start-50 translate-middle"
+                src="./img/logos/ong-banco-de-alimentos.png"
+                alt="ONG Banco de Alimentos"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-fluid position-absolute top-50 start-50 translate-middle"
+                src="./img/logos/caca-fome.png"
+                alt="Caça-Fome"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col g-0 d-flex flex-column">
+          <div id="company-section" class="flex-fill company-section">
+            <article
+              data-status="active"
+              data-index="0"
+              class="company-content text-light position-static position-lg-absolute"
+            >
+              <div>
+                <h2 class="fw-bold mb-3">Vídeo Pitch</h2>
+                <p class="text-secondary lh-lg">
+                  Todo semestre a FIAP organiza um desafio com problemas reais a
+                  serem resolvidos pelos alunos.
+                </p>
+                <p class="text-secondary lh-lg">
+                  Esse desafio é chamado de Global Solution e instiga os alunos
+                  a pensarem e desenvolverem soluções reais com os conhecimentos
+                  aprendidos.
+                </p>
+                <p class="text-secondary lh-lg">
+                  O tema desse 1º semestre de 2023 é o impacto da fome mundial e
+                  como a tecnologia pode ajudar a resolvê-lo.
+                </p>
+                <p class="text-secondary lh-lg">
+                  Veja a apresentação de nossa solução para o combate à fome com
+                  o uso da tecnologia de
+                  <span class="fw-bold primary-color">aeroponia</span> para um
+                  desenvolvimento agrícola
+                  <span class="fw-bold secondary-color">sustentável</span>.
+                </p>
+              </div>
+            </article>
+            <article
+              data-status=""
+              data-index="1"
+              class="company-content text-light position-static position-lg-absolute"
+            >
+              <div>
+                <h2 class="fw-bold mb-3">Microsoft</h2>
+                <p class="text-secondary lh-lg">
+                  Como parceira da ONU, a Microsoft comprometeu-se a apoiar os
+                  Objetivos de Desenvolvimento Sustentável das Nações Unidas
+                  (ODS da ONU), um conjunto de 17 iniciativas adotadas pelos
+                  Estados membros em 2015, focadas em ter um impacto real no
+                  mundo até 2030.
+                </p>
+                <p class="text-secondary lh-lg">
+                  O Relatório de Sustentabilidade Ambiental da Microsoft mostra
+                  o progresso em seus compromissos com a sustentabilidade e
+                  fornece detalhes sobre as áreas específicas de foco em 2023.
+                </p>
 
+                <p class="text-secondary lh-lg">
+                  Saiba o que uma das maiores empresas de tecnologia do mundo
+                  está fazendo para impulsionar uma economia mais inclusiva.
+                </p>
+                <a
+                  href="https://news.microsoft.com/wp-content/uploads/prod/sites/42/2023/05/2022-Environmental-Sustainability-Report.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir relatório de sustentabilidade</a
+                >
+              </div>
+            </article>
+            <article
+              data-status=""
+              data-index="2"
+              class="company-content text-light position-static position-lg-absolute"
+            >
+              <div>
+                <h2 class="fw-bold mb-3">Kraft Heinz</h2>
+                <p class="text-secondary lh-lg">
+                  Empresa referência mundial no setor de alimentos com mais de
+                  200 produtos diferentes disponíveis para compra no Brasil e
+                  funcionários dedicados em mais de 40 países. Na última década
+                  doamos mais de 2 bilhões de refeições para crianças que se
+                  encontram em situação de fome.
+                </p>
+                <p class="text-secondary lh-lg">
+                  As marcas brasileiras (Heinz, Quero e Kraft.) são referências
+                  no mercado de condimentos, vegetais e atomatados, estamos
+                  presentes na maioria dos lares brasileiros, tendo um alto
+                  índice de conhecimento e preferência por parte dos
+                  consumidores.
+                </p>
+                <p class="text-secondary lh-lg">
+                  Veja o manual de boas práticas que esse empresa criou!
+                </p>
+                <a
+                  href="https://www.kraftheinzcompany.com/pdf/khc_inOurRoots_PTBR.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir manual</a
+                >
+              </div>
+            </article>
+            <article
+              data-status=""
+              data-index="3"
+              class="company-content text-light position-static position-lg-absolute"
+            >
+              <div>
+                <h2 class="fw-bold mb-3">CropLife International</h2>
+                <p class="text-secondary lh-lg">
+                  A CropLife Brasil (CLB) é uma associação que reúne
+                  especialistas, instituições e empresas que atuam na pesquisa e
+                  desenvolvimento de tecnologias em quatro áreas essenciais para
+                  a produção agrícola sustentável: germoplasma (mudas e
+                  sementes), biotecnologia, defensivos químicos e produtos
+                  biológicos.
+                </p>
+                <p class="text-secondary lh-lg">
+                  Criada em 2019, a CropLife Brasil é resultado da união de
+                  entidades que antes representavam cada um destes setores
+                  individualmente. Agora, a CLB agrega em uma única plataforma a
+                  experiência e o histórico de associações que por décadas
+                  lideraram as discussões sobre inovação na agricultura.
+                </p>
+                <p class="text-secondary lh-lg">
+                  A CropLife Brasil se dedica a buscar parcerias com diferentes
+                  segmentos da sociedade, a promover educação para adoção e o
+                  uso correto das tecnologias no campo e ao diálogo permanente
+                  com consumidores, formadores de opinião e governos.
+                </p>
+                <a
+                  href="https://croplifebrasil.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Saiba mais</a
+                >
+              </div>
+            </article>
+            <article
+              data-status=""
+              data-index="4"
+              class="company-content text-light position-static position-lg-absolute"
+            >
+              <div>
+                <h2 class="fw-bold mb-3">ONG Banco de Alimentos</h2>
+                <p class="text-secondary lh-lg">
+                  Fundada em 1998, a ONG Banco de Alimentos é uma associação
+                  civil que recolhe alimentos que já perderam valor de
+                  prateleira no comércio e indústria, mas ainda estão aptos para
+                  consumo, e os distribui onde são mais necessários.
+                </p>
+                <p class="text-secondary lh-lg">
+                  No lugar de descartar legumes, massas, frutas, entre outros,
+                  os parceiros doam os excedentes à ONG que repassa tudo às
+                  entidades sociais cadastradas no projeto.
+                </p>
+                <p class="text-secondary lh-lg">
+                  Essa distribuição permite a complementação nutricional de
+                  refeições servidas para milhares de crianças, jovens, adultos
+                  e idosos na cidade de São Paulo, todos os dias.
+                </p>
+                <a
+                  href="https://bancodealimentos.org.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Saiba mais
+                </a>
+              </div>
+            </article>
+            <article
+              data-status=""
+              data-index="5"
+              class="company-content text-light position-static position-lg-absolute"
+            >
+              <div>
+                <h2 class="fw-bold mb-3">Caça Fome</h2>
+                <p class="text-secondary lh-lg">
+                  O Caça-Fome nasceu como uma campanha emergencial em abril de
+                  2020 para socorrer pessoas em situação de risco ou
+                  vulnerabilidade através da distribuição de alimentos
+                  (cestas-emergenciais) e máscaras de proteção contra o
+                  Coronavírus.
+                </p>
+                <p class="text-secondary lh-lg">
+                  A campanha cresceu, e com pouco mais de dois meses, e 200
+                  toneladas de alimentos distribuídas, virou o Instituto Caça
+                  Fome, fundado e gerido pelo empresário paulista Daniel
+                  Ribeiro.
+                </p>
+                <p class="text-secondary lh-lg">
+                  Conheça cada projeto do nosso Instituto:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.cacafome.com.br/#/projeto?section=familyTofamily"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Caça Fome Family to Family
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cacafome.com.br/#/projeto?section=comunidades"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Caça Fome Comunidades</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.cacafome.com.br/#/projeto?section=costuraVidas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Costura Vida</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="d-flex border-top border-dark-subtle z-3 h-100">
+            <button
+              data-bs-target="#companies-indicators"
+              data-bs-slide="prev"
+              type="button"
+              class="flex-fill btn btn-lg btn-dark rounded-0 border-dark-subtle border-start-0 border-top-0 border-bottom-0"
+            >
+              &laquo;
+            </button>
+            <button
+              data-bs-target="#companies-indicators"
+              data-bs-slide="next"
+              type="button"
+              class="flex-fill btn btn-lg btn-dark rounded-0"
+            >
+              &raquo;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="container-fluid text-center py-4 fw-bold">
+      Todos os direitos reservados. &copy; 2023
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

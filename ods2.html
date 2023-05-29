@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>ODS 2 | Fome zero e agricultura sustentável</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0">
+    <nav
+      class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
-          >global&nbsp;<span class="highlighted">solution</span></a
+          >global&nbsp;<span class="fw-bold primary-color">solution</span></a
         >
         <button
           class="navbar-toggler"
@@ -62,6 +64,357 @@
         </div>
       </div>
     </nav>
+    <!-- HEADER -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-8 g-0">
+          <div class="tab-content" id="ods-tab-content">
+            <div
+              class="tab-pane fade show active ratio ratio-16x9"
+              id="ods-1"
+              role="tabpanel"
+              aria-labelledby="ods-1-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/1k-fi5Wn6BY"
+                title="ODS 1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div
+              class="tab-pane fade ratio ratio-16x9"
+              id="ods-2"
+              role="tabpanel"
+              aria-labelledby="ods-2-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/mO3b-olU04o"
+                title="ODS 2"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div
+              class="tab-pane fade ratio ratio-16x9"
+              id="ods-3"
+              role="tabpanel"
+              aria-labelledby="ods-3-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/d6_cSrpUDk0"
+                title="ODS 3"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div
+              class="tab-pane fade ratio ratio-16x9"
+              id="ods-4"
+              role="tabpanel"
+              aria-labelledby="ods-4-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.youtube.com/embed/OBcKJJKLhGk"
+                title="ODS 4"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 g-0">
+          <ul
+            class="row row-cols-4 g-0 list-unstyled"
+            id="ods-tab"
+            role="tablist"
+          >
+            <li class="col" role="presentation">
+              <button
+                class="list-group-item-action active"
+                id="ods-1-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-1"
+                type="button"
+                role="tab"
+                aria-controls="ods-1"
+                aria-selected="true"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/poverty-erradication.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-2-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-2"
+                type="button"
+                role="tab"
+                aria-controls="ods-2"
+                aria-selected="false"
+              >
+                <img class="img-fluid" src="./img/ods/zero-hunger.png" alt="" />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-3-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-3"
+                type="button"
+                role="tab"
+                aria-controls="ods-3"
+                aria-selected="false"
+              >
+                <img class="img-fluid" src="./img/ods/well-being.png" alt="" />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-4-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-4"
+                type="button"
+                role="tab"
+                aria-controls="ods-4"
+                aria-selected="false"
+              >
+                <img class="img-fluid" src="./img/ods/education.png" alt="" />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-5-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-5"
+                type="button"
+                role="tab"
+                aria-controls="ods-5"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/gender-equality.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-6-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-6"
+                type="button"
+                role="tab"
+                aria-controls="ods-6"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/potable-water-sanitation.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-7-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-7"
+                type="button"
+                role="tab"
+                aria-controls="ods-7"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/clean-energy.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-8-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-8"
+                type="button"
+                role="tab"
+                aria-controls="ods-8"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/economic-growth.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-9-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-9"
+                type="button"
+                role="tab"
+                aria-controls="ods-9"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/industry-innovation-infrasctructure.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-10-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-10"
+                type="button"
+                role="tab"
+                aria-controls="ods-10"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/inequality-reduction.jpg"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-11-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-11"
+                type="button"
+                role="tab"
+                aria-controls="ods-11"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/sustaintability.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-12-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-12"
+                type="button"
+                role="tab"
+                aria-controls="ods-12"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/sustainable-consumption-production.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-13-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-13"
+                type="button"
+                role="tab"
+                aria-controls="ods-13"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/climate-change.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-14-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-14"
+                type="button"
+                role="tab"
+                aria-controls="ods-14"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/aquatic-life.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-15-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-15"
+                type="button"
+                role="tab"
+                aria-controls="ods-15"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/terrestrial-life.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-16-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-16"
+                type="button"
+                role="tab"
+                aria-controls="ods-16"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/peace-justice.png"
+                  alt=""
+                />
+              </button>
+            </li>
+            <li class="col" role="presentation">
+              <button
+                id="ods-17-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ods-17"
+                type="button"
+                role="tab"
+                aria-controls="ods-17"
+                aria-selected="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/ods/partnerships.png"
+                  alt=""
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- FOOTER -->
+    <footer class="container-fluid mt-auto text-center py-4 fw-bold">
+      Todos os direitos reservados. &copy; 2023
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
