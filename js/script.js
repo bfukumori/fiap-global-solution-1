@@ -2,6 +2,7 @@
 const letters = 'abcdefghijklmnopqrstuvwxyz';
 
 const decode = document.querySelector('#decode');
+decode.addEventListener('mouseover', hackerNumber);
 
 function hackerNumber() {
   let iterations = 0;
@@ -24,7 +25,6 @@ function hackerNumber() {
     iterations += 1 / 3;
   }, 30);
 }
-hackerNumber();
 
 // 2. Script para selecionar texto dinamicamente de acordo com a seleção do carrosel
 let activeIndex = 0;
@@ -80,3 +80,20 @@ left.onmousemove = (e) => handleOnMove(e);
 right.onmousemove = (e) => handleOnMove(e);
 left.ontouchmove = (e) => handleOnMove(e.touches[0]);
 right.ontouchmove = (e) => handleOnMove(e.touches[0]);
+
+// 4. Efeito de fade in do texto
+function reveal() {
+  const revealElement = document.querySelector('.reveal');
+
+  const windowHeight = window.innerHeight;
+  const elementTop = revealElement.getBoundingClientRect().top;
+  const elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    revealElement.classList.add('active');
+  } else {
+    revealElement.classList.remove('active');
+  }
+}
+
+window.addEventListener('scroll', reveal);
