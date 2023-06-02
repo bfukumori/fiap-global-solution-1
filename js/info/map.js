@@ -1,61 +1,43 @@
+import statistics from "./data.json" assert { type: "json" };
+
 google.charts.load("current", {
   packages: ["geochart"],
 });
-google.charts.setOnLoadCallback(drawRegionsMap);
 
-const statistics = [
-  {
-    code: "002",
-    continent: "Africa",
-    hungry: 281_000_000,
-    malnutrition: "",
-  },
-  {
-    code: "150",
-    continent: "Europe",
-    hungry: 111_000_000,
-    malnutrition: "",
-  },
-  {
-    code: "019",
-    continent: "Americas",
-    hungry: 34_000_000 + 56_500_000,
-    malnutrition: "",
-  },
-  {
-    code: "142",
-    continent: "Asia",
-    hungry: 418_000_000,
-    malnutrition: "",
-  },
-  {
-    code: "009",
-    continent: "Oceania",
-    hungry: 15_400_000,
-    malnutrition: "",
-  },
-];
+const regionInfo = document.querySelector("#region_info");
 
-function drawRegionsMap() {
-  const data = google.visualization.arrayToDataTable([
-    ["Region code", "Continent", "Popularity"],
-    ["002", "Africa", 600],
-    ["150", "Europe", 500],
-    ["019", "Americas", 600],
-    ["142", "Asia", 700],
-    ["009", "Oceania", 600],
-  ]);
+function dataWithSufix(value, sufix) {
+  return { v: value, f: `${value} ${sufix}` };
+}
+
+function generateGoogleData(dataset) {
+  return dataset.map((row) => {
+    return [row.code, row.country, dataWithSufix(row.hungry, "Milhões")];
+  });
+}
+
+google.charts.setOnLoadCallback(() => {
+  const table = new google.visualization.DataTable({
+    cols: [
+      { id: "code", label: "Region code", type: "string" },
+      { id: "country", label: "Country", type: "string" },
+      { id: "hungry", label: "População com Fome", type: "number" },
+    ],
+  });
+
+  table.addRows(generateGoogleData(statistics.data));
 
   const options = {
     region: "world",
-    resolution: "continents",
+    resolution: "subcontinents",
     enableRegionInteractivity: "true",
-    colorAxis: { colors: ["white", "#dda83a"] },
+    colorAxis: { colors: ["#ffcc50", "#c06500"] },
     backgroundColor: {
       fill: "#111111",
       stroke: "gray",
       strokeWidth: 1,
     },
+    datalessRegionColor: "gray",
     keepAspectRatio: true,
     legend: false,
   };
@@ -64,5 +46,11 @@ function drawRegionsMap() {
     document.querySelector("#regions_div")
   );
 
-  chart.draw(data, options);
-}
+  chart.draw(table, options);
+
+  google.visualization.events.addListener(chart, "select", () => {
+    const [selection] = chart.getSelection();
+
+    regionInfo.textContent = statistics.data[selection.row].hungryText;
+  });
+});

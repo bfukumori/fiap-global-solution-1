@@ -118,7 +118,7 @@
 
       <!-- CONTINENT INFO -->
       <section class="container-fluid px-5 mt-3 p-5 text-light">
-        <h2 class="display-6 mb-5">Global (2021)</h2>
+        <h2 class="display-6 mb-5">Global (2020)</h2>
         <div class="row">
           <section class="col-7">
             <div class="list-group list-group-horizontal w-100">
@@ -128,14 +128,10 @@
               >
                 Fome
               </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action list-group-item-secondary text-uppercase"
-              >
-                Desnutrição
-              </button>
             </div>
-            <article></article>
+            <article id="region_info" class="px-4 py-5 fs-5">
+              SELECIONE UMA REGIÃO
+            </article>
           </section>
 
           <div id="regions_div" class="col-5"></div>
@@ -213,6 +209,7 @@
             <figure class="col-4 d-flex flex-wrap justify-content-center">
               <a
                 class="col-5"
+                target="_blank"
                 href="https://www.gov.br/secom/pt-br/assuntos/obrasilvoltou/desenvolvimento/paa-e-recriado-pelo-governo-federal"
               >
                 <img
@@ -221,13 +218,17 @@
                   class="object-fit-contain w-100"
                 />
               </a>
-              <a class="col-5" href="https://www.prosai.com.br">
+              <a class="col-5" target="_blank" href="https://www.prosai.com.br">
                 <img
                   src="./img/info/programa_seguranca_alimentar_prosai.png"
                   alt="Programa de Segurança Alimentar para Idosos"
                   class="object-fit-contain w-100"
               /></a>
-              <a class="col-5" href="http://saboresesaberes.injc.ufrj.br">
+              <a
+                class="col-5"
+                target="_blank"
+                href="http://saboresesaberes.injc.ufrj.br"
+              >
                 <img
                   src="./img/info/programa_seguranca_alimentar_encontro_sabores_e_saberes.png"
                   alt="Programa de Pós-Graduação em Segurança Alimentar e Nutricional"
@@ -248,14 +249,14 @@
               </p>
             </div>
             <figure class="col-4 d-flex align-items-center">
-              <a href="https://www.inpas.org.br" class="col-8">
+              <a href="https://www.inpas.org.br" target="_blank" class="col-8">
                 <img
                   src="./img/info/sustainable_agriculture_inpas.png"
                   alt="Associação Brasileira de Insumos para Agricultura Sustentável"
                   class="object-fit-contain w-100"
                 />
               </a>
-              <a href="https://gaasbrasil.com.br" class="col-4">
+              <a href="https://gaasbrasil.com.br" target="_blank" class="col-4">
                 <img
                   src="./img/info/sustainable_agriculture_gaas.png"
                   alt="Grupo Associado de Agricultura Sustentável"
@@ -318,6 +319,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/info/map.js"></script>
+    <script type="module" src="./js/info/map.js"></script>
   </body>
 </html>

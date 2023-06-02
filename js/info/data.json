@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "country": { "v": "South America", "f": "América do Sul" },
+      "hungry": 33.7,
+      "code": "005",
+      "hungryText": "A América do Sul enfrentou uma grave crise de fome, agravada pela pandemia global e pelas crises econômicas regionais. Milhões de pessoas foram afetadas pela falta de acesso adequado a alimentos, com famílias inteiras lutando para satisfazer suas necessidades básicas. A desigualdade social se aprofundou, com comunidades vulneráveis, como povos indígenas e áreas rurais remotas, sendo as mais afetadas. Os governos e organizações internacionais empreenderam esforços para fornecer assistência alimentar emergencial, mas a escala e a persistência do problema exigiram medidas mais abrangentes para combater a fome e promover a segurança alimentar sustentável na região."
+    },
+    {
+      "country": { "v": "Central America", "f": "América Central" },
+      "hungry": 19,
+      "code": "013",
+      "hungryText": "A América Central enfrentou uma severa crise de fome, agravada pela combinação de desastres naturais, instabilidade política e pobreza generalizada. Milhões de pessoas em países como Honduras, Guatemala, El Salvador e Nicarágua foram afetadas pela escassez de alimentos, com comunidades rurais e marginalizadas sendo as mais impactadas. O ciclone tropical, furacões e secas prolongadas devastaram plantações e prejudicaram a produção agrícola, deixando as famílias sem meios de subsistência. A falta de acesso a alimentos adequados resultou em desnutrição generalizada, especialmente entre crianças, exigindo uma resposta urgente das autoridades governamentais e da comunidade internacional para fornecer ajuda humanitária e promover a segurança alimentar na região."
+    },
+    {
+      "country": { "v": "Caribbean", "f": "Caribe" },
+      "hungry": 7,
+      "code": "029",
+      "hungryText": "O Caribe enfrentou uma grave crise de fome, agravada por uma combinação de fatores, como desastres naturais, instabilidade econômica e dependência do turismo. Países como Haiti, República Dominicana e algumas ilhas menores foram duramente afetados, com milhares de pessoas sofrendo de insegurança alimentar. A passagem de furacões e tempestades tropicais destruiu plantações e infraestruturas agrícolas, exacerbando a escassez de alimentos. Além disso, a queda drástica no turismo devido à pandemia de COVID-19 causou um impacto significativo na economia regional, deixando muitas famílias sem meios de subsistência. Esforços foram feitos para fornecer assistência humanitária e fortalecer a resiliência das comunidades afetadas, buscando combater a fome e promover a segurança alimentar na região do Caribe."
+    },
+    {
+      "country": { "v": "Western Africa", "f": "África Ocidental" },
+      "hungry": 75.2,
+      "code": "011",
+      "hungryText": "A África Ocidental enfrentou uma séria crise de fome, com milhões de pessoas sofrendo de insegurança alimentar extrema. A combinação de conflitos armados, instabilidade política, mudanças climáticas e pobreza generalizada contribuiu para agravar a situação. Países como Nigéria, Burkina Faso e Mali foram particularmente afetados, com comunidades rurais e deslocadas internamente enfrentando condições desesperadoras. A falta de acesso a alimentos básicos e a degradação das condições de vida levaram a altos níveis de desnutrição e mortalidade infantil. Os esforços para fornecer assistência humanitária e promover a segurança alimentar foram lançados, mas a escala e complexidade do desafio exigiram uma resposta coordenada e sustentada dos governos, organizações internacionais e comunidade global."
+    },
+    {
+      "country": { "v": "Eastern Africa", "f": "África Oriental" },
+      "hungry": 125.1,
+      "code": "014",
+      "hungryText": "A África Oriental enfrentou uma grave crise de fome, resultado de uma combinação de fatores como conflitos armados, mudanças climáticas e a piora das condições econômicas. Países como Sudão do Sul, Somália, Etiópia e Quênia foram duramente afetados, com milhões de pessoas sofrendo de insegurança alimentar e desnutrição. A ocorrência de secas prolongadas e inundações devastadoras prejudicou a produção agrícola, deixando comunidades rurais sem acesso adequado a alimentos. Além disso, a instabilidade política e os conflitos armados impediram a distribuição de ajuda humanitária, agravando ainda mais a situação. A resposta humanitária foi fundamental para fornecer assistência alimentar e busca de soluções de longo prazo para combater a fome e promover a segurança alimentar na região da África Oriental."
+    },
+    {
+      "country": { "v": "Northern Africa", "f": "África do Norte" },
+      "hungry": 17.4,
+      "code": "015",
+      "hungryText": "A África do Norte enfrentou desafios significativos em relação à fome e insegurança alimentar. Embora a região seja conhecida por sua diversidade agrícola e infraestrutura relativamente desenvolvida, países como Egito, Líbia e Sudão enfrentaram problemas crescentes devido a conflitos armados, instabilidade política e aumento da pobreza. A falta de acesso a alimentos básicos e a interrupção das cadeias de abastecimento afetaram especialmente as comunidades mais vulneráveis, levando a um aumento da desnutrição e da insegurança alimentar. Esforços foram feitos para fornecer assistência humanitária e melhorar a resiliência agrícola, mas a necessidade de soluções sustentáveis ​​e a colaboração entre os países da região se mostraram fundamentais para enfrentar essa crise complexa."
+    },
+    {
+      "country": { "v": "Middle Africa", "f": "África Central" },
+      "hungry": 57.1,
+      "code": "017",
+      "hungryText": "A África Central enfrentou uma séria crise de fome, com múltiplos desafios agravando a situação. Conflitos armados, deslocamentos em massa, instabilidade política e mudanças climáticas prejudicaram a segurança alimentar na região. Países como República Democrática do Congo, República Centro-Africana e Sudão do Sul foram os mais afetados, com milhões de pessoas sofrendo de insegurança alimentar e desnutrição. A falta de acesso a alimentos básicos, a destruição de plantações e a interrupção das atividades agrícolas tiveram um impacto devastador nas comunidades locais. A resposta humanitária foi essencial para fornecer assistência alimentar emergencial e trabalhar na promoção da estabilidade, segurança e desenvolvimento sustentável na África Central."
+    },
+    {
+      "country": { "v": "Southern Africa", "f": "África do Sul" },
+      "hungry": 6.8,
+      "code": "018",
+      "hungryText": "A África do Sul enfrentou uma crise alarmante de fome, agravada pela combinação de desigualdade socioeconômica, desemprego em massa e os impactos econômicos da pandemia de COVID-19. Milhões de pessoas foram afetadas pela insegurança alimentar, com famílias lutando para obter alimentos básicos. A falta de acesso a alimentos adequados levou a um aumento da desnutrição, especialmente entre as comunidades mais vulneráveis. As organizações governamentais e a sociedade civil mobilizaram esforços para fornecer assistência alimentar e promover programas de apoio social, mas a magnitude da crise exigiu uma resposta abrangente e coordenada para garantir a segurança alimentar e mitigar o sofrimento humano."
+    },
+    {
+      "country": { "v": "Southern Asia", "f": "Sul da Ásia" },
+      "hungry": 305.7,
+      "code": "034",
+      "hungryText": "O Sul da Ásia foi atingido por uma severa crise de fome, resultado de vários fatores, como desastres naturais, pobreza generalizada e instabilidade política. Países como Índia, Paquistão, Bangladesh e Nepal enfrentaram altos níveis de insegurança alimentar, com milhões de pessoas sofrendo com a falta de acesso a alimentos básicos. Secas prolongadas, inundações e ciclones destruíram colheitas e prejudicaram a produção agrícola, deixando comunidades rurais em situação desesperadora. Além disso, a pandemia de COVID-19 exacerbou a crise, agravando ainda mais as condições socioeconômicas. Esforços foram feitos para fornecer assistência humanitária, ajuda alimentar e programas de resiliência agrícola, mas a necessidade de abordagens sustentáveis ​​e cooperação regional se mostraram fundamentais para combater a fome e promover a segurança alimentar na região do Sul da Ásia."
+    },
+    {
+      "country": { "v": "South-Eastern Asia", "f": "Sudeste Asiático" },
+      "hungry": 48.8,
+      "code": "035",
+      "hungryText": "O Sudeste Asiático enfrentou uma séria crise de fome, afetando vários países da região. Conflitos armados, desastres naturais e instabilidade econômica contribuíram para a insegurança alimentar generalizada. Nações como Myanmar, Filipinas e Indonésia enfrentaram altos índices de desnutrição e escassez de alimentos, especialmente entre as comunidades marginalizadas e rurais. As restrições relacionadas à pandemia de COVID-19 também dificultaram o acesso a alimentos e a distribuição de ajuda humanitária. Medidas foram tomadas para fornecer assistência alimentar emergencial e fortalecer a resiliência das comunidades afetadas, mas um enfoque abrangente e colaborativo se mostrou crucial para enfrentar a fome e promover a segurança alimentar sustentável na região do Sudeste Asiático."
+    },
+    {
+      "country": { "v": "Central Asia", "f": "Ásia Central" },
+      "hungry": 2.6,
+      "code": "143",
+      "hungryText": "A Ásia Central enfrentou uma crescente crise de fome, causada por uma combinação de fatores, como conflitos regionais, instabilidade política e desafios econômicos. Países como Afeganistão, Tajiquistão e Quirguistão foram severamente afetados, com milhões de pessoas enfrentando insegurança alimentar e desnutrição. A falta de acesso a alimentos básicos, a degradação dos recursos naturais e a interrupção das cadeias de suprimentos agravaram ainda mais a situação. Esforços foram feitos para fornecer assistência humanitária e promover a resiliência agrícola, mas a necessidade de soluções sustentáveis ​​e de colaboração regional se mostraram fundamentais para enfrentar essa crise complexa de fome na Ásia Central."
+    },
+    {
+      "country": { "v": "Western Asia", "f": "Ásia Ocidental" },
+      "hungry": 42.3,
+      "code": "145",
+      "hungryText": "A região do Oriente Médio enfrentou uma crescente crise de fome, agravada por uma combinação de fatores, como conflitos prolongados, instabilidade política e impactos econômicos. Países como Síria, Iêmen e Iraque foram particularmente afetados, com milhões de pessoas sofrendo de insegurança alimentar e desnutrição. A destruição de infraestruturas agrícolas, restrições de movimento e bloqueios dificultaram o acesso a alimentos básicos, deixando comunidades vulneráveis lutando para satisfazer suas necessidades nutricionais. A resposta humanitária foi crucial para fornecer assistência alimentar emergencial, mas um esforço conjunto entre governos, organizações internacionais e a comunidade global é necessário para combater efetivamente a fome e promover a segurança alimentar sustentável na região do Oriente Médio."
+    }
+  ]
+}
