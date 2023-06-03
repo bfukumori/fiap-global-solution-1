@@ -1,424 +1,1239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>ODS 2 | Fome zero e agricultura sustentável</title>
-  </head>
-  <body class="d-flex flex-column min-vh-100">
-    <!-- NAVIGATION -->
-    <nav
-      class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"
-          >global&nbsp;<span class="fw-bold primary-color">solution</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav-menu"
-          aria-controls="nav-menu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav-menu">
-          <ul class="navbar-nav my-3 ms-3 ms-md-auto d-flex gap-2 gap-md-4">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./info.html">Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./ods2.html" aria-current="page"
-                >ODS2</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./agrotech.html">Agrotech</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./global-solution.html"
-                >Global Solution</a
-              >
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/ods2.css" />
+  <title>ODS 2 | Fome zero e agricultura sustentável</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">global&nbsp;<span class="fw-bold primary-color" id="decode"
+          data-value="solution">solution</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+        aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav my-3 ms-3 ms-md-auto d-flex gap-2 gap-md-4">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./info.html">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./ods2.html" aria-current="page">ODS2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./agrotech.html">Agrotech</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./global-solution.html">Global Solution</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- HEADER -->
-    <header class="container-fluid">
-      <div class="row">
-        <div class="col-8 g-0">
-          <div class="tab-content" id="ods-tab-content">
-            <div
-              class="tab-pane fade show active ratio ratio-16x9"
-              id="ods-1"
-              role="tabpanel"
-              aria-labelledby="ods-1-tab"
-              tabindex="0"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/1k-fi5Wn6BY"
-                title="ODS 1"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div
-              class="tab-pane fade ratio ratio-16x9"
-              id="ods-2"
-              role="tabpanel"
-              aria-labelledby="ods-2-tab"
-              tabindex="0"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/mO3b-olU04o"
-                title="ODS 2"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div
-              class="tab-pane fade ratio ratio-16x9"
-              id="ods-3"
-              role="tabpanel"
-              aria-labelledby="ods-3-tab"
-              tabindex="0"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/d6_cSrpUDk0"
-                title="ODS 3"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div
-              class="tab-pane fade ratio ratio-16x9"
-              id="ods-4"
-              role="tabpanel"
-              aria-labelledby="ods-4-tab"
-              tabindex="0"
-            >
-              <iframe
-                src="https://www.youtube.com/embed/OBcKJJKLhGk"
-                title="ODS 4"
-                allowfullscreen
-              ></iframe>
+    </div>
+  </nav>
+  <!-- HEADER -->
+
+  <!-- CONTENT-->
+  <main class="container-fluid">
+    <div class="row flex-row py-lg-5 bg-body-tertiary text-center">
+      <div class="col-lg-6 col-md-8 mx-auto pl-8 disclaimer p-4 p-md-0">
+        <h1 class="fw-light pb-2 pb-md-0">Pacto Global da ONU no Brasil</h1>
+        <p class="lead text-body-secondary pt-2">Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação
+          para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os
+          lugares, possam desfrutar de paz e de prosperidade. </p>
+        <!-- <span class="small"><a href="https://brasil.un.org/pt-br/sdgs">Nações Unidas</a></span> -->
+        <span class="fw-bold small d-none d-lg-block">Navegue pelas ações propostas abaixo para tornar o nosso mundo melhor!</>
+      </div>
+    </div>
+
+    <div class="row bg-body-tertiary d-none d-lg-block">
+      <div class="col-12 thumbs-plataformas" id="ods-tab" role="tablist">
+        <div class="thumb-plataforma action-1 active" id="ods-1-tab" data-bs-toggle="tab" data-bs-target="#ods-1"
+          type="button" role="tab" aria-controls="ods-1" aria-selected="true" data-backgroud="#e5233d"></div>
+        <div class="thumb-plataforma action-2" id="ods-2-tab" data-bs-toggle="tab" data-bs-target="#ods-2" type="button"
+          role="tab" aria-controls="ods-2" aria-selected="false" data-backgroud="#daa439"></div>
+        <div class="thumb-plataforma action-3" id="ods-3-tab" data-bs-toggle="tab" data-bs-target="#ods-3" type="button"
+          role="tab" aria-controls="ods-3" aria-selected="false" data-backgroud="#4a9d44"></div>
+        <div class="thumb-plataforma action-4" id="ods-4-tab" data-bs-toggle="tab" data-bs-target="#ods-4" type="button"
+          role="tab" aria-controls="ods-4" aria-selected="false" data-backgroud="#c7212f"></div>
+        <div class="thumb-plataforma action-5" id="ods-5-tab" data-bs-toggle="tab" data-bs-target="#ods-5" type="button"
+          role="tab" aria-controls="ods-5" aria-selected="false" data-backgroud="#ef402d"></div>
+        <div class="thumb-plataforma action-6" id="ods-6-tab" data-bs-toggle="tab" data-bs-target="#ods-6" type="button"
+          role="tab" aria-controls="ods-6" aria-selected="false" data-backgroud="#27bfe6"></div>
+        <div class="thumb-plataforma action-7" id="ods-7-tab" data-bs-toggle="tab" data-bs-target="#ods-7" type="button"
+          role="tab" aria-controls="ods-7" aria-selected="false" data-backgroud="#fbc412"></div>
+        <div class="thumb-plataforma action-8" id="ods-8-tab" data-bs-toggle="tab" data-bs-target="#ods-8" type="button"
+          role="tab" aria-controls="ods-8" aria-selected="false" data-backgroud="#a31c44"></div>
+        <div class="thumb-plataforma action-9" id="ods-9-tab" data-bs-toggle="tab" data-bs-target="#ods-9" type="button"
+          role="tab" aria-controls="ods-9" aria-selected="false" data-backgroud="#f26a2e"></div>
+        <div class="thumb-plataforma action-10" id="ods-10-tab" data-bs-toggle="tab" data-bs-target="#ods-10"
+          type="button" role="tab" aria-controls="ods-10" aria-selected="false" data-backgroud="#de1768"></div>
+        <div class="thumb-plataforma action-11" id="ods-11-tab" data-bs-toggle="tab" data-bs-target="#ods-11"
+          type="button" role="tab" aria-controls="ods-11" aria-selected="false" data-backgroud="#f89d2a"></div>
+        <div class="thumb-plataforma action-12" id="ods-12-tab" data-bs-toggle="tab" data-bs-target="#ods-12"
+          type="button" role="tab" aria-controls="ods-12" aria-selected="false" data-backgroud="#bf8d2c"></div>
+        <div class="thumb-plataforma action-13" id="ods-13-tab" data-bs-toggle="tab" data-bs-target="#ods-13"
+          type="button" role="tab" aria-controls="ods-13" aria-selected="false" data-backgroud="#407f46"></div>
+        <div class="thumb-plataforma action-14" id="ods-14-tab" data-bs-toggle="tab" data-bs-target="#ods-14"
+          type="button" role="tab" aria-controls="ods-14" aria-selected="false" data-backgroud="#1f97d4"></div>
+        <div class="thumb-plataforma action-15" id="ods-15-tab" data-bs-toggle="tab" data-bs-target="#ods-15"
+          type="button" role="tab" aria-controls="ods-15" aria-selected="false" data-backgroud="#59ba47"></div>
+        <div class="thumb-plataforma action-16" id="ods-16-tab" data-bs-toggle="tab" data-bs-target="#ods-16"
+          type="button" role="tab" aria-controls="ods-16" aria-selected="false" data-backgroud="#136a9f"></div>
+        <div class="thumb-plataforma action-17" id="ods-17-tab" data-bs-toggle="tab" data-bs-target="#ods-17"
+          type="button" role="tab" aria-controls="ods-17" aria-selected="false" data-backgroud="#14496b"></div>
+      </div>
+    </div>
+
+    <div class="row mt-3 justify-content-center content">
+      <div class="col-lg-8 px-5 px-md-0 p-5 p-md-0">
+        <div class="tab-content" id="ods-tab-content">
+          <div class="tab-pane fade container" id="ods-1" role="tabpanel" aria-labelledby="ods-1-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>1</h1>
+                <h3>Erradicação da Pobreza</h3>
+                <p>Erradicar a pobreza em todas as formas e em todos os lugares</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 1. Acabar com a pobreza em todas as suas formas, em todos os lugares</p>
+
+                <p><span>1.1</span> Até 2030, erradicar a pobreza extrema para todas as pessoas em todos os lugares,
+                  atualmente
+                  medida como pessoas vivendo com menos de US$ 1,90 por dia</p>
+                <p><span>1.2</span> Até 2030, reduzir pelo menos à metade a proporção de homens, mulheres e crianças, de
+                  todas as
+                  idades, que vivem na pobreza, em todas as suas dimensões, de acordo com as definições nacionais</p>
+
+                <p><span>1.3</span> Implementar, em nível nacional, medidas e sistemas de proteção social adequados,
+                  para todos,
+                  incluindo pisos, e até 2030 atingir a cobertura substancial dos pobres e vulneráveis</p>
+
+                <p><span>1.4</span> Até 2030, garantir que todos os homens e mulheres, particularmente os pobres e
+                  vulneráveis,
+                  tenham direitos iguais aos recursos econômicos, bem como o acesso a serviços básicos, propriedade e
+                  controle sobre a terra e outras formas de propriedade, herança, recursos naturais, novas tecnologias
+                  apropriadas e serviços financeiros, incluindo microfinanças</p>
+
+                <p><span>1.5</span> Até 2030, construir a resiliência dos pobres e daqueles em situação de
+                  vulnerabilidade, e reduzir
+                  a exposição e vulnerabilidade destes a eventos extremos relacionados com o clima e outros choques e
+                  desastres econômicos, sociais e ambientais</p>
+
+                <p><span>1.a</span> Garantir uma mobilização significativa de recursos a partir de uma variedade de
+                  fontes, inclusive
+                  por meio do reforço da cooperação para o desenvolvimento, para proporcionar meios adequados e
+                  previsíveis para que os países em desenvolvimento, em particular os países menos desenvolvidos,
+                  implementem programas e políticas para acabar com a pobreza em todas as suas dimensões</p>
+
+                <p><span>1.b</span> Criar marcos políticos sólidos em níveis nacional, regional e internacional, com
+                  base em
+                  estratégias de desenvolvimento a favor dos pobres e sensíveis a gênero, para apoiar investimentos
+                  acelerados nas ações de erradicação da pobreza</p>
+              </div>
+              <div class="col-5 text-center">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1k-fi5Wn6BY"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/1" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-4 g-0">
-          <ul
-            class="row row-cols-4 g-0 list-unstyled"
-            id="ods-tab"
-            role="tablist"
-          >
-            <li class="col" role="presentation">
-              <button
-                class="list-group-item-action active"
-                id="ods-1-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-1"
-                type="button"
-                role="tab"
-                aria-controls="ods-1"
-                aria-selected="true"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/poverty-erradication.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-2-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-2"
-                type="button"
-                role="tab"
-                aria-controls="ods-2"
-                aria-selected="false"
-              >
-                <img class="img-fluid" src="./img/ods/zero-hunger.png" alt="" />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-3-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-3"
-                type="button"
-                role="tab"
-                aria-controls="ods-3"
-                aria-selected="false"
-              >
-                <img class="img-fluid" src="./img/ods/well-being.png" alt="" />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-4-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-4"
-                type="button"
-                role="tab"
-                aria-controls="ods-4"
-                aria-selected="false"
-              >
-                <img class="img-fluid" src="./img/ods/education.png" alt="" />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-5-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-5"
-                type="button"
-                role="tab"
-                aria-controls="ods-5"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/gender-equality.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-6-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-6"
-                type="button"
-                role="tab"
-                aria-controls="ods-6"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/potable-water-sanitation.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-7-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-7"
-                type="button"
-                role="tab"
-                aria-controls="ods-7"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/clean-energy.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-8-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-8"
-                type="button"
-                role="tab"
-                aria-controls="ods-8"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/economic-growth.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-9-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-9"
-                type="button"
-                role="tab"
-                aria-controls="ods-9"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/industry-innovation-infrasctructure.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-10-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-10"
-                type="button"
-                role="tab"
-                aria-controls="ods-10"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/inequality-reduction.jpg"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-11-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-11"
-                type="button"
-                role="tab"
-                aria-controls="ods-11"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/sustaintability.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-12-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-12"
-                type="button"
-                role="tab"
-                aria-controls="ods-12"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/sustainable-consumption-production.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-13-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-13"
-                type="button"
-                role="tab"
-                aria-controls="ods-13"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/climate-change.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-14-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-14"
-                type="button"
-                role="tab"
-                aria-controls="ods-14"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/aquatic-life.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-15-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-15"
-                type="button"
-                role="tab"
-                aria-controls="ods-15"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/terrestrial-life.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-16-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-16"
-                type="button"
-                role="tab"
-                aria-controls="ods-16"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/peace-justice.png"
-                  alt=""
-                />
-              </button>
-            </li>
-            <li class="col" role="presentation">
-              <button
-                id="ods-17-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#ods-17"
-                type="button"
-                role="tab"
-                aria-controls="ods-17"
-                aria-selected="false"
-              >
-                <img
-                  class="img-fluid"
-                  src="./img/ods/partnerships.png"
-                  alt=""
-                />
-              </button>
-            </li>
-          </ul>
+          <div class="tab-pane fade show active container" id="ods-2" role="tabpanel" aria-labelledby="ods-2-tab" tabindex="0">
+            <div class="row">
+              <div class="col-lg-7">
+                <h1>2</h1>
+                <h3>Fome zero e agricultura sustentável</h3>
+                <p>Erradicar a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura
+                  sustentável</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a
+                  agricultura sustentável</p>
+                <p><span>2.1</span> Até 2030, acabar com a fome e garantir o acesso de todas as pessoas, em particular
+                  os pobres e
+                  pessoas em situações vulneráveis, incluindo crianças, a alimentos seguros, nutritivos e suficientes
+                  durante todo o ano</p>
+                <p>2.2 Até 2030, acabar com todas as formas de desnutrição, incluindo atingir, até 2025, as metas
+                  acordadas internacionalmente sobre nanismo e caquexia em crianças menores de cinco anos de idade, e
+                  atender às necessidades nutricionais dos adolescentes, mulheres grávidas e lactantes e pessoas idosas
+                </p>
+                <p><span>2.3</span> Até 2030, dobrar a produtividade agrícola e a renda dos pequenos produtores de
+                  alimentos,
+                  particularmente das mulheres, povos indígenas, agricultores familiares, pastores e pescadores,
+                  inclusive por meio de acesso seguro e igual à terra, outros recursos produtivos e insumos,
+                  conhecimento, serviços financeiros, mercados e oportunidades de agregação de valor e de emprego não
+                  agrícola</p>
+                <p><span>2.4</span> Até 2030, garantir sistemas sustentáveis de produção de alimentos e implementar
+                  práticas
+                  agrícolas resilientes, que aumentem a produtividade e a produção, que ajudem a manter os ecossistemas,
+                  que fortaleçam a capacidade de adaptação às mudanças climáticas, às condições meteorológicas extremas,
+                  secas, inundações e outros desastres, e que melhorem progressivamente a qualidade da terra e do solo
+                </p>
+                <p><span>2.5</span> Até 2020, manter a diversidade genética de sementes, plantas cultivadas, animais de
+                  criação e
+                  domesticados e suas respectivas espécies selvagens, inclusive por meio de bancos de sementes e plantas
+                  diversificados e bem geridos em nível nacional, regional e internacional, e garantir o acesso e a
+                  repartição justa e equitativa dos benefícios decorrentes da utilização dos recursos genéticos e
+                  conhecimentos tradicionais associados, como acordado internacionalmente</p>
+                <p><span>2.a</span> Aumentar o investimento, inclusive via o reforço da cooperação internacional, em
+                  infraestrutura
+                  rural, pesquisa e extensão de serviços agrícolas, desenvolvimento de tecnologia, e os bancos de genes
+                  de plantas e animais, para aumentar a capacidade de produção agrícola nos países em desenvolvimento,
+                  em particular nos países menos desenvolvidos</p>
+                <p><span>2.b</span> Corrigir e prevenir as restrições ao comércio e distorções nos mercados agrícolas
+                  mundiais,
+                  incluindo a eliminação paralela de todas as formas de subsídios à exportação e todas as medidas de
+                  exportação com efeito equivalente, de acordo com o mandato da Rodada de Desenvolvimento de Doha</p>
+                <p><span>2.c</span> Adotar medidas para garantir o funcionamento adequado dos mercados de commodities de
+                  alimentos e
+                  seus derivados, e facilitar o acesso oportuno à informação de mercado, inclusive sobre as reservas de
+                  alimentos, a fim de ajudar a limitar a volatilidade extrema dos preços dos alimentos</p>
+              </div>
+              <div class="col-lg-5 text-center">
+                <iframe class="d-none d-lg-block" width="560" height="315" src="https://www.youtube.com/embed/mO3b-olU04o" title="ODS 2"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/2" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-3" role="tabpanel" aria-labelledby="ods-3-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>3</h1>
+                <h3>Saúde e Bem-Estar</h3>
+                <p>Garantir o acesso à saúde de qualidade e promover o bem-estar para todos, em todas as idades</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 3. Assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades
+                </p>
+                <p><span>3.1</span> Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por
+                  100.000 nascidos vivos</p>
+                <p><span>3.2</span> Até 2030, acabar com as mortes evitáveis de recém-nascidos e crianças menores de 5
+                  anos, com todos os países objetivando reduzir a mortalidade neonatal para pelo menos 12 por 1.000
+                  nascidos vivos e a mortalidade de crianças menores de 5 anos para pelo menos 25 por 1.000 nascidos
+                  vivos</p>
+                <p><span>3.3</span> Até 2030, acabar com as epidemias de AIDS, tuberculose, malária e doenças tropicais
+                  negligenciadas, e combater a hepatite, doenças transmitidas pela água, e outras doenças transmissíveis
+                </p>
+                <p><span>3.4</span> Até 2030, reduzir em um terço a mortalidade prematura por doenças não transmissíveis
+                  via prevenção e tratamento, e promover a saúde mental e o bem-estar</p>
+                <p><span>3.5</span> Reforçar a prevenção e o tratamento do abuso de substâncias, incluindo o abuso de
+                  drogas entorpecentes e uso nocivo do álcool</p>
+                <p><span>3.6</span> Até 2020, reduzir pela metade as mortes e os ferimentos globais por acidentes em
+                  estradas</p>
+                <p><span>3.7</span> Até 2030, assegurar o acesso universal aos serviços de saúde sexual e reprodutiva,
+                  incluindo o planejamento familiar, informação e educação, bem como a integração da saúde reprodutiva
+                  em estratégias e programas nacionais</p>
+                <p><span>3.8</span> Atingir a cobertura universal de saúde, incluindo a proteção do risco financeiro, o
+                  acesso a serviços de saúde essenciais de qualidade e o acesso a medicamentos e vacinas essenciais
+                  seguros, eficazes, de qualidade e a preços acessíveis para todos</p>
+                <p><span>3.9</span> Até 2030, reduzir substancialmente o número de mortes e doenças por produtos
+                  químicos perigosos, contaminação e poluição do ar e água do solo</p>
+                <p><span>3.a</span> Fortalecer a implementação da Convenção-Quadro para o Controle do Tabaco em todos os
+                  países, conforme apropriado</p>
+                <p><span>3.b</span> Apoiar a pesquisa e o desenvolvimento de vacinas e medicamentos para as doenças
+                  transmissíveis e não transmissíveis, que afetam principalmente os países em desenvolvimento,
+                  proporcionar o acesso a medicamentos e vacinas essenciais a preços acessíveis, de acordo com a
+                  Declaração de Doha, que afirma o direito dos países em desenvolvimento de utilizarem plenamente as
+                  disposições do acordo TRIPS sobre flexibilidades para proteger a saúde pública e, em particular,
+                  proporcionar o acesso a medicamentos para todos</p>
+                <p><span>3.c</span> Aumentar substancialmente o financiamento da saúde e o recrutamento, desenvolvimento
+                  e formação, e retenção do pessoal de saúde nos países em desenvolvimento, especialmente nos países
+                  menos desenvolvidos e nos pequenos Estados insulares em desenvolvimento</p>
+                <p><span>3.d</span> Reforçar a capacidade de todos os países, particularmente os países em
+                  desenvolvimento, para o alerta precoce, redução de riscos e gerenciamento de riscos nacionais e
+                  globais de saúde</p>
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d6_cSrpUDk0" title="ODS 3"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/3" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-4" role="tabpanel" aria-labelledby="ods-4-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>4</h1>
+                <h3>Educação de qualidade</h3>
+                <p>Garantir o acesso à educação inclusiva, de qualidade e equitativa, e promover oportunidades de
+                  aprendizagem ao longo da vida para todos</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 4. Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de
+                  aprendizagem ao longo da vida para todas e todos</p>
+
+                <p><span>4.1</span> Até 2030, garantir que todas as meninas e meninos completem o ensino primário e
+                  secundário livre, equitativo e de qualidade, que conduza a resultados de aprendizagem relevantes e
+                  eficazes</p>
+
+                <p><span>4.2</span> Até 2030, garantir que todos as meninas e meninos tenham acesso a um desenvolvimento
+                  de qualidade na primeira infância, cuidados e educação pré-escolar, de modo que eles estejam prontos
+                  para o ensino primário</p>
+
+                <p><span>4.3</span> Até 2030, assegurar a igualdade de acesso para todos os homens e mulheres à educação
+                  técnica, profissional e superior de qualidade, a preços acessíveis, incluindo universidade</p>
+
+                <p><span>4.4</span> Até 2030, aumentar substancialmente o número de jovens e adultos que tenham
+                  habilidades relevantes, inclusive competências técnicas e profissionais, para emprego, trabalho
+                  decente e empreendedorismo</p>
+
+                <p><span>4.5</span> Até 2030, eliminar as disparidades de gênero na educação e garantir a igualdade de
+                  acesso a todos os níveis de educação e formação profissional para os mais vulneráveis, incluindo as
+                  pessoas com deficiência, povos indígenas e as crianças em situação de vulnerabilidade</p>
+
+                <p><span>4.6</span></p> Até 2030, garantir que todos os jovens e uma substancial proporção dos adultos,
+                homens e mulheres estejam alfabetizados e tenham adquirido o conhecimento básico de matemática
+
+                <p><span>4.7</span> Até 2030, garantir que todos os alunos adquiram conhecimentos e habilidades
+                  necessárias para promover o desenvolvimento sustentável, inclusive, entre outros, por meio da educação
+                  para o desenvolvimento sustentável e estilos de vida sustentáveis, direitos humanos, igualdade de
+                  gênero, promoção de uma cultura de paz e não violência, cidadania global e valorização da diversidade
+                  cultural e da contribuição da cultura para o desenvolvimento sustentável</p>
+
+                <p><span>4.a</span> Construir e melhorar instalações físicas para educação, apropriadas para crianças e
+                  sensíveis às deficiências e ao gênero, e que proporcionem ambientes de aprendizagem seguros e não
+                  violentos, inclusivos e eficazes para todos</p>
+
+                <p><span>4.b</span> Até 2020, substancialmente ampliar globalmente o número de bolsas de estudo para os
+                  países em desenvolvimento, em particular os países menos desenvolvidos, pequenos Estados insulares em
+                  desenvolvimento e os países africanos, para o ensino superior, incluindo programas de formação
+                  profissional, de tecnologia da informação e da comunicação, técnicos, de engenharia e programas
+                  científicos em países desenvolvidos e outros países em desenvolvimento</p>
+
+                <p><span>4.c</span> Até 2030, substancialmente aumentar o contingente de professores qualificados,
+                  inclusive por meio da cooperação internacional para a formação de professores, nos países em
+                  desenvolvimento, especialmente os países menos desenvolvidos e pequenos Estados insulares em
+                  desenvolvimento</p>
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OBcKJJKLhGk" title="ODS 4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/3" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-5" role="tabpanel" aria-labelledby="ods-5-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>5</h1>
+                <h3>Igualdade de gênero</h3>
+                <p>Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 5. Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas</p>
+                <p><span>5.1</span> Acabar com todas as formas de discriminação contra todas as mulheres e meninas em
+                  toda parte</p>
+
+                <p><span>5.2</span> Eliminar todas as formas de violência contra todas as mulheres e meninas nas esferas
+                  públicas e privadas, incluindo o tráfico e exploração sexual e de outros tipos</p>
+
+                <p><span>5.3</span> Eliminar todas as práticas nocivas, como os casamentos prematuros, forçados e de
+                  crianças e mutilações genitais femininas</p>
+
+                <p><span>5.4</span> Reconhecer e valorizar o trabalho de assistência e doméstico não remunerado, por
+                  meio da disponibilização de serviços públicos, infraestrutura e políticas de proteção social, bem como
+                  a promoção da responsabilidade compartilhada dentro do lar e da família, conforme os contextos
+                  nacionais</p>
+
+                <p><span>5.5</span> Garantir a participação plena e efetiva das mulheres e a igualdade de oportunidades
+                  para a liderança em todos os níveis de tomada de decisão na vida política, econômica e pública</p>
+
+                <p><span>5.6</span> Assegurar o acesso universal à saúde sexual e reprodutiva e os direitos
+                  reprodutivos, como acordado em conformidade com o Programa de Ação da Conferência Internacional sobre
+                  População e Desenvolvimento e com a Plataforma de Ação de Pequim e os documentos resultantes de suas
+                  conferências de revisão</p>
+
+                <p><span>5.a</span> Realizar reformas para dar às mulheres direitos iguais aos recursos econômicos, bem
+                  como o acesso a propriedade e controle sobre a terra e outras formas de propriedade, serviços
+                  financeiros, herança e os recursos naturais, de acordo com as leis nacionais</p>
+
+                <p><span>5.b</span> Aumentar o uso de tecnologias de base, em particular as tecnologias de informação e
+                  comunicação, para promover o empoderamento das mulheres</p>
+
+                <p><span>5.c</span> Adotar e fortalecer políticas sólidas e legislação aplicável para a promoção da
+                  igualdade de gênero e o empoderamento de todas as mulheres e meninas em todos os níveis</p>
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e_ncmwle4pc" title="ODS 5"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/5" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-6" role="tabpanel" aria-labelledby="ods-6-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>6</h1>
+                <h3>Água potável e saneamento</h3>
+                <p>Garantir a disponibilidade e a gestão sustentável da água potável e do saneamento para todos</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 6. Assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos
+                </p>
+
+                <p><span>6.1</span> Até 2030, alcançar o acesso universal e equitativo a água potável e segura para
+                  todos</p>
+
+                <p><span>6.2</span> Até 2030, alcançar o acesso a saneamento e higiene adequados e equitativos para
+                  todos, e acabar com a defecação a céu aberto, com especial atenção para as necessidades das mulheres e
+                  meninas e daqueles em situação de vulnerabilidade</p>
+
+                <p><span>6.3</span> Até 2030, melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e
+                  minimizando a liberação de produtos químicos e materiais perigosos, reduzindo à metade a proporção de
+                  águas residuais não tratadas e aumentando substancialmente a reciclagem e reutilização segura
+                  globalmente</p>
+
+                <p><span>6.4</span> Até 2030, aumentar substancialmente a eficiência do uso da água em todos os setores
+                  e assegurar retiradas sustentáveis e o abastecimento de água doce para enfrentar a escassez de água, e
+                  reduzir substancialmente o número de pessoas que sofrem com a escassez de água</p>
+
+                <p><span>6.5</span> Até 2030, implementar a gestão integrada dos recursos hídricos em todos os níveis,
+                  inclusive via cooperação transfronteiriça, conforme apropriado</p>
+
+                <p><span>6.6</span> Até 2020, proteger e restaurar ecossistemas relacionados com a água, incluindo
+                  montanhas, florestas, zonas úmidas, rios, aquíferos e lagos</p>
+
+                <p><span>6.a</span> Até 2030, ampliar a cooperação internacional e o apoio à capacitação para os países
+                  em desenvolvimento em atividades e programas relacionados à água e saneamento, incluindo a coleta de
+                  água, a dessalinização, a eficiência no uso da água, o tratamento de efluentes, a reciclagem e as
+                  tecnologias de reuso</p>
+
+                <p><span>6.b</span> Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da
+                  água e do saneamento</p>
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3_7kBxKbElE" title="ODS 6"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/6" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-7" role="tabpanel" aria-labelledby="ods-7-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>7</h1>
+                <h3>Energia limpa e acessível</h3>
+                <p>Garantir o acesso a fontes de energia fiáveis, sustentáveis e modernas para todos</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6 w-100">Objetivo 7. Assegurar o acesso confiável, sustentável, moderno e a preço acessível à energia para
+                  todas e todos</p>
+
+
+                <p><span>7.1</span> Até 2030, assegurar o acesso universal, confiável, moderno e a preços acessíveis a
+                  serviços de energia</p>
+
+                <p><span>7.2</span> Até 2030, aumentar substancialmente a participação de energias renováveis na matriz
+                  energética global</p>
+
+                <p><span>7.3</span> Até 2030, dobrar a taxa global de melhoria da eficiência energética</p>
+
+                <p><span>7.a</span> Até 2030, reforçar a cooperação internacional para facilitar o acesso a pesquisa e
+                  tecnologias de energia limpa, incluindo energias renováveis, eficiência energética e tecnologias de
+                  combustíveis fósseis avançadas e mais limpas, e promover o investimento em infraestrutura de energia e
+                  em tecnologias de energia limpa</p>
+
+                <p><span>7.b</span> Até 2030, expandir a infraestrutura e modernizar a tecnologia para o fornecimento de
+                  serviços de energia modernos e sustentáveis para todos nos países em desenvolvimento, particularmente
+                  nos países menos desenvolvidos, nos pequenos Estados insulares em desenvolvimento e nos países em
+                  desenvolvimento sem litoral, de acordo com seus respectivos programas de apoio</p>
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GvzTcWxWfa8" title="ODS 6"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/7" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-8" role="tabpanel" aria-labelledby="ods-8-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>8</h1>
+                <h3>Trabalho decente e crescimento econômico</h3>
+                <p>Promover o crescimento econômico inclusivo e sustentável, o emprego pleno e produtivo e o trabalho
+                  digno para todos</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 8. Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e
+                  produtivo e trabalho decente para todas e todos</p>
+                <p><span>8.1</span> Sustentar o crescimento econômico per capita de acordo com as circunstâncias
+                  nacionais e, em particular, um crescimento anual de pelo menos 7% do produto interno bruto [PIB] nos
+                  países menos desenvolvidos</p>
+
+                <p><span>8.2</span> Atingir níveis mais elevados de produtividade das economias por meio da
+                  diversificação, modernização tecnológica e inovação, inclusive por meio de um foco em setores de alto
+                  valor agregado e dos setores intensivos em mão de obra</p>
+
+                <p><span>8.3</span> Promover políticas orientadas para o desenvolvimento que apoiem as atividades
+                  produtivas, geração de emprego decente, empreendedorismo, criatividade e inovação, e incentivar a
+                  formalização e o crescimento das micro, pequenas e médias empresas, inclusive por meio do acesso a
+                  serviços financeiros</p>
+
+                <p><span>8.4</span> Melhorar progressivamente, até 2030, a eficiência dos recursos globais no consumo e
+                  na produção, e empenhar-se para dissociar o crescimento econômico da degradação ambiental, de acordo
+                  com o Plano Decenal de Programas sobre Produção e Consumo Sustentáveis, com os países desenvolvidos
+                  assumindo a liderança</p>
+
+                <p><span>8.5</span> Até 2030, alcançar o emprego pleno e produtivo e trabalho decente para todas as
+                  mulheres e homens, inclusive para os jovens e as pessoas com deficiência, e remuneração igual para
+                  trabalho de igual valor</p>
+
+                <p><span>8.6</span> Até 2020, reduzir substancialmente a proporção de jovens sem emprego, educação ou
+                  formação</p>
+
+                <p><span>8.7</span> Tomar medidas imediatas e eficazes para erradicar o trabalho forçado, acabar com a
+                  escravidão moderna e o tráfico de pessoas, e assegurar a proibição e eliminação das piores formas de
+                  trabalho infantil, incluindo recrutamento e utilização de crianças-soldado, e até 2025 acabar com o
+                  trabalho infantil em todas as suas formas</p>
+
+                <p><span>8.8</span> Proteger os direitos trabalhistas e promover ambientes de trabalho seguros e
+                  protegidos para todos os trabalhadores, incluindo os trabalhadores migrantes, em particular as
+                  mulheres migrantes, e pessoas em empregos precários</p>
+
+                <p><span>8.9</span> Até 2030, elaborar e implementar políticas para promover o turismo sustentável, que
+                  gera empregos e promove a cultura e os produtos locais</p>
+
+                <p><span>8.10</span> Fortalecer a capacidade das instituições financeiras nacionais para incentivar a
+                  expansão do acesso aos serviços bancários, de seguros e financeiros para todos</p>
+
+                <p><span>8.a</span> Aumentar o apoio da Iniciativa de Ajuda para o Comércio [Aid for Trade] para os
+                  países em desenvolvimento, particularmente os países menos desenvolvidos, inclusive por meio do Quadro
+                  Integrado Reforçado para a Assistência Técnica Relacionada com o Comércio para os países menos
+                  desenvolvidos</p>
+
+                <p><span>8.b</span> Até 2020, desenvolver e operacionalizar uma estratégia global para o emprego dos
+                  jovens e implementar o Pacto Mundial para o Emprego da Organização Internacional do Trabalho [OIT]</p>
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X0g0sQuJj1k" title="ODS 8"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/8" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-9" role="tabpanel" aria-labelledby="ods-9-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>9</h1>
+                <h3>Indústria, inovação e infraestrutura</h3>
+                <p>Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar
+                  a inovação</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6">Objetivo 9. Construir infraestruturas resilientes, promover a industrialização inclusiva e
+                  sustentável e fomentar a inovação</p>
+
+                <p><span>9.1</span> Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente,
+                  incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o
+                  bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos</p>
+
+                <p><span>9.2</span> Promover a industrialização inclusiva e sustentável e, até 2030, aumentar
+                  significativamente a participação da indústria no setor de emprego e no PIB, de acordo com as
+                  circunstâncias nacionais, e dobrar sua participação nos países menos desenvolvidos</p>
+
+                <p><span>9.3</span> Aumentar o acesso das pequenas indústrias e outras empresas, particularmente em
+                  países em desenvolvimento, aos serviços financeiros, incluindo crédito acessível e sua integração em
+                  cadeias de valor e mercados</p>
+
+                <p><span>9.4</span> Até 2030, modernizar a infraestrutura e reabilitar as indústrias para torná-las
+                  sustentáveis, com eficiência aumentada no uso de recursos e maior adoção de tecnologias e processos
+                  industriais limpos e ambientalmente corretos; com todos os países atuando de acordo com suas
+                  respectivas capacidades</p>
+
+                <p><span>9.5</span> Fortalecer a pesquisa científica, melhorar as capacidades tecnológicas de setores
+                  industriais em todos os países, particularmente os países em desenvolvimento, inclusive, até 2030,
+                  incentivando a inovação e aumentando substancialmente o número de trabalhadores de pesquisa e
+                  desenvolvimento por milhão de pessoas e os gastos público e privado em pesquisa e desenvolvimento</p>
+
+                <p><span>9.a</span> Facilitar o desenvolvimento de infraestrutura sustentável e resiliente em países em
+                  desenvolvimento, por meio de maior apoio financeiro, tecnológico e técnico aos países africanos, aos
+                  países menos desenvolvidos, aos países em desenvolvimento sem litoral e aos pequenos Estados insulares
+                  em desenvolvimento</p>
+
+                <p><span>9.b</span> Apoiar o desenvolvimento tecnológico, a pesquisa e a inovação nacionais nos países
+                  em desenvolvimento, inclusive garantindo um ambiente político propício para, entre outras coisas, a
+                  diversificação industrial e a agregação de valor às commodities</p>
+
+                <p><span>9.c</span> Aumentar significativamente o acesso às tecnologias de informação e comunicação e se
+                  empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos
+                  desenvolvidos, até 2020</p>
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tfR0Z11g5v8" title="ODS 9"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/9" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-10" role="tabpanel" aria-labelledby="ods-10-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>10</h1>
+                <h3>Redução das desigualdades</h3>
+                <p>Reduzir as desigualdades no interior dos países e entre países</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6 w-100">Objetivo 10. Reduzir a desigualdade dentro dos países e entre eles</p>
+
+                <p><span>10.1</span> Até 2030, progressivamente alcançar e sustentar o crescimento da renda dos 40% da
+                  população mais pobre a uma taxa maior que a média nacional</p>
+
+                <p><span>10.2</span> Até 2030, empoderar e promover a inclusão social, econômica e política de todos,
+                  independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou
+                  outra</p>
+
+                <p><span>10.3</span> Garantir a igualdade de oportunidades e reduzir as desigualdades de resultados,
+                  inclusive por meio da eliminação de leis, políticas e práticas discriminatórias e da promoção de
+                  legislação, políticas e ações adequadas a este respeito</p>
+
+                <p><span>10.4</span> Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar
+                  progressivamente uma maior igualdade</p>
+
+                <p><span>10.5</span> Melhorar a regulamentação e monitoramento dos mercados e instituições financeiras
+                  globais e fortalecer a implementação de tais regulamentações</p>
+
+                <p><span>10.6</span> Assegurar uma representação e voz mais forte dos países em desenvolvimento em
+                  tomadas de decisão nas instituições econômicas e financeiras internacionais globais, a fim de produzir
+                  instituições mais eficazes, críveis, responsáveis e legítimas</p>
+
+                <p><span>10.7</span> Facilitar a migração e a mobilidade ordenada, segura, regular e responsável das
+                  pessoas, inclusive por meio da implementação de políticas de migração planejadas e bem geridas</p>
+
+                <p><span>10.a</span> Implementar o princípio do tratamento especial e diferenciado para países em
+                  desenvolvimento, em particular os países menos desenvolvidos, em conformidade com os acordos da OMC
+                </p>
+
+                <p><span>10.b</span> Incentivar a assistência oficial ao desenvolvimento e fluxos financeiros, incluindo
+                  o investimento externo direto, para os Estados onde a necessidade é maior, em particular os países
+                  menos desenvolvidos, os países africanos, os pequenos Estados insulares em desenvolvimento e os países
+                  em desenvolvimento sem litoral, de acordo com seus planos e programas nacionais</p>
+
+                <p><span>10.c</span> Até 2030, reduzir para menos de 3% os custos de transação de remessas dos migrantes
+                  e eliminar os corredores de remessas com custos superiores a 5%</p>
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TBIsdyCv5v8" title="ODS 10"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/10" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-11" role="tabpanel" aria-labelledby="ods-11-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>11</h1>
+                <h3>Cidades e comunidades sustentáveis</h3>
+                <p>Tornar as cidades e comunidades mais inclusivas, seguras, resilientes e sustentáveis</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 11. Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e
+                  sustentáveis</p>
+
+                <p><span>11.1</span> Até 2030, garantir o acesso de todos à habitação segura, adequada e a preço
+                  acessível, e aos serviços básicos e urbanizar as favelas</p>
+
+                <p><span>11.2</span> Até 2030, proporcionar o acesso a sistemas de transporte seguros, acessíveis,
+                  sustentáveis e a preço acessível para todos, melhorando a segurança rodoviária por meio da expansão
+                  dos transportes públicos, com especial atenção para as necessidades das pessoas em situação de
+                  vulnerabilidade, mulheres, crianças, pessoas com deficiência e idosos</p>
+
+                <p><span>11.3</span> Até 2030, aumentar a urbanização inclusiva e sustentável, e as capacidades para o
+                  planejamento e gestão de assentamentos humanos participativos, integrados e sustentáveis, em todos os
+                  países</p>
+
+                <p><span>11.4</span> Fortalecer esforços para proteger e salvaguardar o patrimônio cultural e natural do
+                  mundo</p>
+
+                <p><span>11.5</span> Até 2030, reduzir significativamente o número de mortes e o número de pessoas
+                  afetadas por catástrofes e substancialmente diminuir as perdas econômicas diretas causadas por elas em
+                  relação ao produto interno bruto global, incluindo os desastres relacionados à água, com o foco em
+                  proteger os pobres e as pessoas em situação de vulnerabilidade</p>
+
+                <p><span>11.6</span> Até 2030, reduzir o impacto ambiental negativo per capita das cidades, inclusive
+                  prestando especial atenção à qualidade do ar, gestão de resíduos municipais e outros</p>
+
+                <p><span>11.7</span> Até 2030, proporcionar o acesso universal a espaços públicos seguros, inclusivos,
+                  acessíveis e verdes, particularmente para as mulheres e crianças, pessoas idosas e pessoas com
+                  deficiência</p>
+
+                <p><span>11.a</span> Apoiar relações econômicas, sociais e ambientais positivas entre áreas urbanas,
+                  periurbanas e rurais, reforçando o planejamento nacional e regional de desenvolvimento</p>
+
+                <p><span>11.b</span> Até 2020, aumentar substancialmente o número de cidades e assentamentos humanos
+                  adotando e implementando políticas e planos integrados para a inclusão, a eficiência dos recursos,
+                  mitigação e adaptação às mudanças climáticas, a resiliência a desastres; e desenvolver e implementar,
+                  de acordo com o Marco de Sendai para a Redução do Risco de Desastres 2015-2030, o gerenciamento
+                  holístico do risco de desastres em todos os níveis</p>
+
+                <p><span>11.c</span> Apoiar os países menos desenvolvidos, inclusive por meio de assistência técnica e
+                  financeira, para construções sustentáveis e resilientes, utilizando materiais locais</p>
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M0K7K2blRiw" title="ODS 11"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/11" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-12" role="tabpanel" aria-labelledby="ods-12-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>12</h1>
+                <h3>Consumo e produção responsáveis</h3>
+                <p>Garantir padrões de consumo e de produção sustentáveis</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 12. Assegurar padrões de produção e de consumo sustentáveis</p>
+
+                <p><span>12.1</span> Implementar o Plano Decenal de Programas sobre Produção e Consumo Sustentáveis, com
+                  todos os países tomando medidas, e os países desenvolvidos assumindo a liderança, tendo em conta o
+                  desenvolvimento e as capacidades dos países em desenvolvimento</p>
+
+                <p><span>12.2</span> Até 2030, alcançar a gestão sustentável e o uso eficiente dos recursos naturais</p>
+
+                <p><span>12.3</span> Até 2030, reduzir pela metade o desperdício de alimentos per capita mundial, nos
+                  níveis de varejo e do consumidor, e reduzir as perdas de alimentos ao longo das cadeias de produção e
+                  abastecimento, incluindo as perdas pós-colheita</p>
+
+                <p><span>12.4</span> Até 2020, alcançar o manejo ambientalmente saudável dos produtos químicos e todos
+                  os resíduos, ao longo de todo o ciclo de vida destes, de acordo com os marcos internacionais
+                  acordados, e reduzir significativamente a liberação destes para o ar, água e solo, para minimizar seus
+                  impactos negativos sobre a saúde humana e o meio ambiente</p>
+
+                <p><span>12.5</span> Até 2030, reduzir substancialmente a geração de resíduos por meio da prevenção,
+                  redução, reciclagem e reuso</p>
+
+                <p><span>12.6</span> Incentivar as empresas, especialmente as empresas grandes e transnacionais, a
+                  adotar práticas sustentáveis e a integrar informações de sustentabilidade em seu ciclo de relatórios
+                </p>
+
+                <p><span>12.7</span> Promover práticas de compras públicas sustentáveis, de acordo com as políticas e
+                  prioridades nacionais</p>
+
+                <p><span>12.8</span> Até 2030, garantir que as pessoas, em todos os lugares, tenham informação relevante
+                  e conscientização para o desenvolvimento sustentável e estilos de vida em harmonia com a natureza</p>
+
+                <p><span>12.a</span> Apoiar países em desenvolvimento a fortalecer suas capacidades científicas e
+                  tecnológicas para mudar para padrões mais sustentáveis de produção e consumo</p>
+
+                <p><span>12.b</span> Desenvolver e implementar ferramentas para monitorar os impactos do desenvolvimento
+                  sustentável para o turismo sustentável, que gera empregos, promove a cultura e os produtos locais</p>
+
+                <p><span>12.c</span> Racionalizar subsídios ineficientes aos combustíveis fósseis, que encorajam o
+                  consumo exagerado, eliminando as distorções de mercado, de acordo com as circunstâncias nacionais,
+                  inclusive por meio da reestruturação fiscal e a eliminação gradual desses subsídios prejudiciais, caso
+                  existam, para refletir os seus impactos ambientais, tendo plenamente em conta as necessidades
+                  específicas e condições dos países em desenvolvimento e minimizando os possíveis impactos adversos
+                  sobre o seu desenvolvimento de uma forma que proteja os pobres e as comunidades afetadas</p>
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_EWaTZk6uNA" title="ODS 12"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/12" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-13" role="tabpanel" aria-labelledby="ods-13-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>13</h1>
+                <h3>Ação contra a mudança global do clima</h3>
+                <p>Adotar medidas urgentes para combater as alterações climáticas e os seus impactos</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 13. Tomar medidas urgentes para combater a mudança climática e seus impactos (*)</p>
+
+
+                <p><span>13.1</span> Reforçar a resiliência e a capacidade de adaptação a riscos relacionados ao clima e
+                  às catástrofes naturais em todos os países</p>
+
+                <p><span>13.2</span> Integrar medidas da mudança do clima nas políticas, estratégias e planejamentos
+                  nacionais</p>
+
+                <p><span>13.3</span> Melhorar a educação, aumentar a conscientização e a capacidade humana e
+                  institucional sobre mitigação, adaptação, redução de impacto e alerta precoce da mudança do clima</p>
+
+                <p><span>13.a</span> Implementar o compromisso assumido pelos países desenvolvidos partes da Convenção
+                  Quadro das Nações Unidas sobre Mudança do Clima [UNFCCC] para a meta de mobilizar conjuntamente US$
+                  100 bilhões por ano a partir de 2020, de todas as fontes, para atender às necessidades dos países em
+                  desenvolvimento, no contexto das ações de mitigação significativas e transparência na implementação; e
+                  operacionalizar plenamente o Fundo Verde para o Clima por meio de sua capitalização o mais cedo
+                  possível</p>
+
+                <p><span>13.b</span> Promover mecanismos para a criação de capacidades para o planejamento relacionado à
+                  mudança do clima e à gestão eficaz, nos países menos desenvolvidos, inclusive com foco em mulheres,
+                  jovens, comunidades locais e marginalizadas</p>
+
+                <p class="fst-italic">(*) Reconhecendo que a Convenção Quadro das Nações Unidas sobre Mudança do Clima
+                  [UNFCCC] é o fórum internacional intergovernamental primário para negociar a resposta global à mudança
+                  do clima.</p>
+
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PCzAmVfqErU" title="ODS 13"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/13" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-14" role="tabpanel" aria-labelledby="ods-14-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>14</h1>
+                <h3>Vida na água</h3>
+                <p>Conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento
+                  sustentável</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 14. Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o
+                  desenvolvimento sustentável</p>
+
+
+                <p><span>14.1</span> Até 2025, prevenir e reduzir significativamente a poluição marinha de todos os
+                  tipos, especialmente a advinda de atividades terrestres, incluindo detritos marinhos e a poluição por
+                  nutrientes</p>
+
+                <p><span>14.2</span> Até 2020, gerir de forma sustentável e proteger os ecossistemas marinhos e
+                  costeiros para evitar impactos adversos significativos, inclusive por meio do reforço da sua
+                  capacidade de resiliência, e tomar medidas para a sua restauração, a fim de assegurar oceanos
+                  saudáveis e produtivos</p>
+
+                <p><span>14.3</span> Minimizar e enfrentar os impactos da acidificação dos oceanos, inclusive por meio
+                  do reforço da cooperação científica em todos os níveis</p>
+
+                <p><span>14.4</span> Até 2020, efetivamente regular a coleta, e acabar com a sobrepesca, ilegal, não
+                  reportada e não regulamentada e as práticas de pesca destrutivas, e implementar planos de gestão com
+                  base científica, para restaurar populações de peixes no menor tempo possível, pelo menos a níveis que
+                  possam produzir rendimento máximo sustentável, como determinado por suas características biológicas
+                </p>
+
+                <p><span>14.5</span> Até 2020, conservar pelo menos 10% das zonas costeiras e marinhas, de acordo com a
+                  legislação nacional e internacional, e com base na melhor informação científica disponível</p>
+
+                <p><span>14.6</span> Até 2020, proibir certas formas de subsídios à pesca, que contribuem para a
+                  sobrecapacidade e a sobrepesca, e eliminar os subsídios que contribuam para a pesca ilegal, não
+                  reportada e não regulamentada, e abster-se de introduzir novos subsídios como estes, reconhecendo que
+                  o tratamento especial e diferenciado adequado e eficaz para os países em desenvolvimento e os países
+                  menos desenvolvidos deve ser parte integrante da negociação sobre subsídios à pesca da Organização
+                  Mundial do Comércio</p>
+
+                <p><span>14.7</span> Até 2030, aumentar os benefícios econômicos para os pequenos Estados insulares em
+                  desenvolvimento e os países menos desenvolvidos, a partir do uso sustentável dos recursos marinhos,
+                  inclusive por meio de uma gestão sustentável da pesca, aquicultura e turismo</p>
+
+                <p><span>14.a</span> Aumentar o conhecimento científico, desenvolver capacidades de pesquisa e
+                  transferir tecnologia marinha, tendo em conta os critérios e orientações sobre a Transferência de
+                  Tecnologia Marinha da Comissão Oceanográfica Intergovernamental, a fim de melhorar a saúde dos oceanos
+                  e aumentar a contribuição da biodiversidade marinha para o desenvolvimento dos países em
+                  desenvolvimento, em particular os pequenos Estados insulares em desenvolvimento e os países menos
+                  desenvolvidos</p>
+
+                <p><span>14.b</span> Proporcionar o acesso dos pescadores artesanais de pequena escala aos recursos
+                  marinhos e mercados</p>
+
+                <p><span>14.c</span> Assegurar a conservação e o uso sustentável dos oceanos e seus recursos pela
+                  implementação do direito internacional, como refletido na UNCLOS [Convenção das Nações Unidas sobre o
+                  Direito do Mar], que provê o arcabouço legal para a conservação e utilização sustentável dos oceanos e
+                  dos seus recursos, conforme registrado no parágrafo 158 do “Futuro Que Queremos”</p>
+
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6Pjh9vIKseg" title="ODS 14"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/14" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-15" role="tabpanel" aria-labelledby="ods-15-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>15</h1>
+                <h3>Vida terrestre</h3>
+                <p>Proteger, restaurar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma
+                  sustentável as florestas, combater a desertificação, travar e reverter a degradação dos solos e travar
+                  a perda da biodiversidade</p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de
+                  forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e
+                  deter a perda de biodiversidade</p>
+
+                <p><span>15.1</span> Até 2020, assegurar a conservação, recuperação e uso sustentável de ecossistemas
+                  terrestres e de água doce interiores e seus serviços, em especial florestas, zonas úmidas, montanhas e
+                  terras áridas, em conformidade com as obrigações decorrentes dos acordos internacionais</p>
+
+                <p><span>15.2</span> Até 2020, promover a implementação da gestão sustentável de todos os tipos de
+                  florestas, deter o desmatamento, restaurar florestas degradadas e aumentar substancialmente o
+                  florestamento e o reflorestamento globalmente</p>
+
+                <p><span>15.3</span> Até 2030, combater a desertificação, restaurar a terra e o solo degradado,
+                  incluindo terrenos afetados pela desertificação, secas e inundações, e lutar para alcançar um mundo
+                  neutro em termos de degradação do solo</p>
+
+                <p><span>15.4</span> Até 2030, assegurar a conservação dos ecossistemas de montanha, incluindo a sua
+                  biodiversidade, para melhorar a sua capacidade de proporcionar benefícios que são essenciais para o
+                  desenvolvimento sustentável</p>
+
+                <p><span>15.5</span> Tomar medidas urgentes e significativas para reduzir a degradação de habitat
+                  naturais, deter a perda de biodiversidade e, até 2020, proteger e evitar a extinção de espécies
+                  ameaçadas</p>
+
+                <p><span>15.6</span> Garantir uma repartição justa e equitativa dos benefícios derivados da utilização
+                  dos recursos genéticos e promover o acesso adequado aos recursos genéticos</p>
+
+                <p><span>15.7</span> Tomar medidas urgentes para acabar com a caça ilegal e o tráfico de espécies da
+                  flora e fauna protegidas e abordar tanto a demanda quanto a oferta de produtos ilegais da vida
+                  selvagem</p>
+
+                <p><span>15.8</span> Até 2020, implementar medidas para evitar a introdução e reduzir significativamente
+                  o impacto de espécies exóticas invasoras em ecossistemas terrestres e aquáticos, e controlar ou
+                  erradicar as espécies prioritárias</p>
+
+                <p><span>15.9</span> Até 2020, integrar os valores dos ecossistemas e da biodiversidade ao planejamento
+                  nacional e local, nos processos de desenvolvimento, nas estratégias de redução da pobreza e nos
+                  sistemas de contas</p>
+
+                <p><span>15.a</span> Mobilizar e aumentar significativamente, a partir de todas as fontes, os recursos
+                  financeiros para a conservação e o uso sustentável da biodiversidade e dos ecossistemas</p>
+
+                <p><span>15.b</span> Mobilizar recursos significativos de todas as fontes e em todos os níveis para
+                  financiar o manejo florestal sustentável e proporcionar incentivos adequados aos países em
+                  desenvolvimento para promover o manejo florestal sustentável, inclusive para a conservação e o
+                  reflorestamento</p>
+
+                <p><span>15.c</span> Reforçar o apoio global para os esforços de combate à caça ilegal e ao tráfico de
+                  espécies protegidas, inclusive por meio do aumento da capacidade das comunidades locais para buscar
+                  oportunidades de subsistência sustentável</p>
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sGLZmg5m9hA" title="ODS 15"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/15" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-16" role="tabpanel" aria-labelledby="ods-16-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>16</h1>
+                <h3>Paz, Justiça e Instituições Eficazes</h3>
+                <p>Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso
+                  à justiça para todos e construir instituições eficazes, responsáveis e inclusivas a todos os níveis
+                </p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 16. Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável,
+                  proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e
+                  inclusivas em todos os níveis</p>
+
+
+                <p><span>16.1</span> Reduzir significativamente todas as formas de violência e as taxas de mortalidade
+                  relacionada em todos os lugares</p>
+
+                <p><span>16.2</span> Acabar com abuso, exploração, tráfico e todas as formas de violência e tortura
+                  contra crianças</p>
+
+                <p><span>16.3</span> Promover o Estado de Direito, em nível nacional e internacional, e garantir a
+                  igualdade de acesso à justiça para todos</p>
+
+                <p><span>16.4</span> Até 2030, reduzir significativamente os fluxos financeiros e de armas ilegais,
+                  reforçar a recuperação e devolução de recursos roubados e combater todas as formas de crime organizado
+                </p>
+
+                <p><span>16.5</span> Reduzir substancialmente a corrupção e o suborno em todas as suas formas</p>
+
+                <p><span>16.6</span> Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis
+                </p>
+
+                <p><span>16.7</span> Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa
+                  em todos os níveis</p>
+
+                <p><span>16.8</span> Ampliar e fortalecer a participação dos países em desenvolvimento nas instituições
+                  de governança global</p>
+
+                <p><span>16.9</span> Até 2030, fornecer identidade legal para todos, incluindo o registro de nascimento
+                </p>
+
+                <p><span>16.10</span> Assegurar o acesso público à informação e proteger as liberdades fundamentais, em
+                  conformidade com a legislação nacional e os acordos internacionais</p>
+
+                <p><span>16.a</span> Fortalecer as instituições nacionais relevantes, inclusive por meio da cooperação
+                  internacional, para a construção de capacidades em todos os níveis, em particular nos países em
+                  desenvolvimento, para a prevenção da violência e o combate ao terrorismo e ao crime</p>
+
+                <p><span>16.b</span> Promover e fazer cumprir leis e políticas não discriminatórias para o
+                  desenvolvimento sustentável</p>
+
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kkCKt8zHmPQ" title="ODS 16"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/16" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade container" id="ods-17" role="tabpanel" aria-labelledby="ods-17-tab" tabindex="0">
+            <div class="row">
+              <div class="col-7">
+                <h1>17</h1>
+                <h3>Parcerias e meios de implementação</h3>
+                <p>Reforçar os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável
+                </p>
+                <p class="badge bg-primary text-wrap p-2 py-4 fs-6  w-100">Objetivo 17. Fortalecer os meios de implementação e revitalizar a parceria global para o
+                  desenvolvimento sustentável</p>
+
+                <p class="fw-bold text-decoration-underline">Finanças</p>
+
+                <p><span>17.1</span> Fortalecer a mobilização de recursos internos, inclusive por meio do apoio
+                  internacional aos países em desenvolvimento, para melhorar a capacidade nacional para arrecadação de
+                  impostos e outras receitas</p>
+
+                <p><span>17.2</span> Países desenvolvidos implementarem plenamente os seus compromissos em matéria de
+                  assistência oficial ao desenvolvimento [AOD], inclusive fornecer 0,7% da renda nacional bruta [RNB] em
+                  AOD aos países em desenvolvimento, dos quais 0,15% a 0,20% para os países menos desenvolvidos;
+                  provedores de AOD são encorajados a considerar a definir uma meta para fornecer pelo menos 0,20% da
+                  renda nacional bruta em AOD para os países menos desenvolvidos</p>
+
+                <p><span>17.3</span> Mobilizar recursos financeiros adicionais para os países em desenvolvimento a
+                  partir de múltiplas fontes</p>
+
+                <p><span>17.4</span> Ajudar os países em desenvolvimento a alcançar a sustentabilidade da dívida de
+                  longo prazo por meio de políticas coordenadas destinadas a promover o financiamento, a redução e a
+                  reestruturação da dívida, conforme apropriado, e tratar da dívida externa dos países pobres altamente
+                  endividados para reduzir o superendividamento</p>
+
+                <p><span>17.5</span> Adotar e implementar regimes de promoção de investimentos para os países menos
+                  desenvolvidos</p>
+
+                <p class="fw-bold text-decoration-underline">Tecnologia</p>
+
+                <p><span>17.6</span> Melhorar a cooperação Norte-Sul, Sul-Sul e triangular regional e internacional e o
+                  acesso à ciência, tecnologia e inovação, e aumentar o compartilhamento de conhecimentos em termos
+                  mutuamente acordados, inclusive por meio de uma melhor coordenação entre os mecanismos existentes,
+                  particularmente no nível das Nações Unidas, e por meio de um mecanismo de facilitação de tecnologia
+                  global</p>
+
+                <p><span>17.7</span> Promover o desenvolvimento, a transferência, a disseminação e a difusão de
+                  tecnologias ambientalmente corretas para os países em desenvolvimento, em condições favoráveis,
+                  inclusive em condições concessionais e preferenciais, conforme mutuamente acordado</p>
+
+                <p><span>17.8</span> Operacionalizar plenamente o Banco de Tecnologia e o mecanismo de capacitação em
+                  ciência, tecnologia e inovação para os países menos desenvolvidos até 2017, e aumentar o uso de
+                  tecnologias de capacitação, em particular das tecnologias de informação e comunicação</p>
+
+                <p class="fw-bold text-decoration-underline">Capacitação</p>
+
+                <p><span>17.9</span> Reforçar o apoio internacional para a implementação eficaz e orientada da
+                  capacitação em países em desenvolvimento, a fim de apoiar os planos nacionais para implementar todos
+                  os objetivos de desenvolvimento sustentável, inclusive por meio da cooperação Norte-Sul, Sul-Sul e
+                  triangular</p>
+
+                <p class="fw-bold text-decoration-underline">Comércio</p>
+
+                <p><span>17.10</span> Promover um sistema multilateral de comércio universal, baseado em regras, aberto,
+                  não discriminatório e equitativo no âmbito da Organização Mundial do Comércio, inclusive por meio da
+                  conclusão das negociações no âmbito de sua Agenda de Desenvolvimento de Doha</p>
+
+                <p><span>17.11</span> Aumentar significativamente as exportações dos países em desenvolvimento, em
+                  particular com o objetivo de duplicar a participação dos países menos desenvolvidos nas exportações
+                  globais até 2020</p>
+
+                <p><span>17.12</span> Concretizar a implementação oportuna de acesso a mercados livres de cotas e taxas,
+                  de forma duradoura, para todos os países menos desenvolvidos, de acordo com as decisões da OMC,
+                  inclusive por meio de garantias de que as regras de origem preferenciais aplicáveis às importações
+                  provenientes de países menos desenvolvidos sejam transparentes e simples, e contribuam para facilitar
+                  o acesso ao mercado</p>
+
+                <p class="fw-bold">Questões sistêmicas</p>
+
+                <p class="fw-bold text-decoration-underline">Coerência de políticas e institucional</p>
+
+                <p><span>17.13</span> Aumentar a estabilidade macroeconômica global, inclusive por meio da coordenação e
+                  da coerência de políticas</p>
+
+                <p><span>17.14</span> Aumentar a coerência das políticas para o desenvolvimento sustentável</p>
+
+                <p><span>17.15</span> Respeitar o espaço político e a liderança de cada país para estabelecer e
+                  implementar políticas para a erradicação da pobreza e o desenvolvimento sustentável</p>
+
+                <p class="fw-bold text-decoration-underline">As parcerias multissetoriais</p>
+
+                <p><span>17.16</span> Reforçar a parceria global para o desenvolvimento sustentável, complementada por
+                  parcerias multissetoriais que mobilizem e compartilhem conhecimento, expertise, tecnologia e recursos
+                  financeiros, para apoiar a realização dos objetivos do desenvolvimento sustentável em todos os países,
+                  particularmente nos países em desenvolvimento</p>
+
+                <p><span>17.17</span> Incentivar e promover parcerias públicas, público-privadas e com a sociedade civil
+                  eficazes, a partir da experiência das estratégias de mobilização de recursos dessas parcerias</p>
+
+                <p class="fw-bold text-decoration-underline">Dados, monitoramento e prestação de contas</p>
+
+                <p><span>17.18</span> Até 2020, reforçar o apoio à capacitação para os países em desenvolvimento,
+                  inclusive para os países menos desenvolvidos e pequenos Estados insulares em desenvolvimento, para
+                  aumentar significativamente a disponibilidade de dados de alta qualidade, atuais e confiáveis,
+                  desagregados por renda, gênero, idade, raça, etnia, status migratório, deficiência, localização
+                  geográfica e outras características relevantes em contextos nacionais</p>
+
+                <p><span>17.19</span> Até 2030, valer-se de iniciativas existentes para desenvolver medidas do progresso
+                  do desenvolvimento sustentável que complementem o produto interno bruto [PIB] e apoiem a capacitação
+                  estatística nos países em desenvolvimento</p>
+
+
+              </div>
+              <div class="col-5 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/65wPjarLVmM" title="ODS 17"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+                <div class="row">
+                  <div class="col-12">
+                    <p> Fonte: <a href="https://brasil.un.org/pt-br/sdgs/17" target="_blank">ONU para Desenvolvimento
+                        sustentável</a></p>
+                    <p>Data da consulta: 31/05/2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
       </div>
-    </header>
-    <!-- FOOTER -->
-    <footer class="container-fluid mt-auto text-center py-4 fw-bold">
-      Todos os direitos reservados. &copy; 2023
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid text-center py-4 fw-bold">
+    Todos os direitos reservados. &copy; 2023
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="./js/ods2.js"></script>
+  <script src="./js/decode.animation.js"></script>
+</body>
+
 </html>
