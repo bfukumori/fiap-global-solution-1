@@ -1,32 +1,4 @@
-// 1. Efeito de descriptografia
-const letters = 'abcdefghijklmnopqrstuvwxyz';
-
-const decode = document.querySelector('#decode');
-
-function hackerNumber() {
-  let iterations = 0;
-
-  const interval = setInterval(() => {
-    decode.innerText = decode.innerText
-      .split('')
-      .map((_, index) => {
-        if (index < iterations) {
-          return decode.dataset.value[index];
-        }
-        return letters[Math.floor(Math.random() * 26)];
-      })
-      .join('');
-
-    if (iterations >= decode.dataset.value.length) {
-      clearInterval(interval);
-    }
-
-    iterations += 1 / 3;
-  }, 30);
-}
-hackerNumber();
-
-// 2. Script para selecionar texto dinamicamente de acordo com a seleção do carrosel
+// Script para selecionar texto dinamicamente de acordo com a seleção do carrosel
 let activeIndex = 0;
 const companiesContent = document.getElementsByClassName('company-content');
 const prevButton = document.querySelector('[data-bs-slide="prev"]');
@@ -67,16 +39,41 @@ function handlePrevClick() {
 nextButton.addEventListener('click', handleNextClick);
 prevButton.addEventListener('click', handlePrevClick);
 
-// 3. Efeito de troca de tela ao mover o mouse
+// Efeito de troca de tela ao mover o mouse
 const left = document.getElementById('left-side');
 const right = document.getElementById('right-side');
 
 const handleOnMove = (e) => {
+  if (e instanceof TouchEvent) {
+    const p = (e.touches[0].clientX / window.innerWidth) * 100;
+    left.style.width = `${p}%`;
+  }
   const p = (e.clientX / window.innerWidth) * 100;
   left.style.width = `${p}%`;
 };
 
-left.onmousemove = (e) => handleOnMove(e);
-right.onmousemove = (e) => handleOnMove(e);
-left.ontouchmove = (e) => handleOnMove(e.touches[0]);
-right.ontouchmove = (e) => handleOnMove(e.touches[0]);
+left.addEventListener('mousemove', handleOnMove);
+right.addEventListener('mousemove', handleOnMove);
+left.addEventListener('touchmove', handleOnMove, {
+  passive: true,
+});
+right.addEventListener('touchmove', handleOnMove, {
+  passive: true,
+});
+
+// Efeito de fade in do texto
+function reveal() {
+  const revealElement = document.querySelector('.reveal');
+
+  const windowHeight = window.innerHeight;
+  const elementTop = revealElement.getBoundingClientRect().top;
+  const elementVisible = 150;
+
+  if (elementTop < windowHeight - elementVisible) {
+    revealElement.classList.add('active');
+  } else {
+    revealElement.classList.remove('active');
+  }
+}
+
+window.addEventListener('scroll', reveal);
