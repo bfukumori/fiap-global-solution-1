@@ -1,4 +1,4 @@
-// 1. Efeito de descriptografia
+// Efeito de descriptografia
 const letters = 'abcdefghijklmnopqrstuvwxyz';
 
 const decode = document.querySelector('#decode');

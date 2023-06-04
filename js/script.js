@@ -1,8 +1,4 @@
-////////////////////////////////////////////////////////
-// The decode effect was moved to decode.animation.js 
-///////////////////////////////////////////////////////
-
-// 2. Script para selecionar texto dinamicamente de acordo com a seleção do carrosel
+// Script para selecionar texto dinamicamente de acordo com a seleção do carrosel
 let activeIndex = 0;
 const companiesContent = document.getElementsByClassName('company-content');
 const prevButton = document.querySelector('[data-bs-slide="prev"]');
@@ -43,21 +39,29 @@ function handlePrevClick() {
 nextButton.addEventListener('click', handleNextClick);
 prevButton.addEventListener('click', handlePrevClick);
 
-// 3. Efeito de troca de tela ao mover o mouse
+// Efeito de troca de tela ao mover o mouse
 const left = document.getElementById('left-side');
 const right = document.getElementById('right-side');
 
 const handleOnMove = (e) => {
+  if (e instanceof TouchEvent) {
+    const p = (e.touches[0].clientX / window.innerWidth) * 100;
+    left.style.width = `${p}%`;
+  }
   const p = (e.clientX / window.innerWidth) * 100;
   left.style.width = `${p}%`;
 };
 
-left.onmousemove = (e) => handleOnMove(e);
-right.onmousemove = (e) => handleOnMove(e);
-left.ontouchmove = (e) => handleOnMove(e.touches[0]);
-right.ontouchmove = (e) => handleOnMove(e.touches[0]);
+left.addEventListener('mousemove', handleOnMove);
+right.addEventListener('mousemove', handleOnMove);
+left.addEventListener('touchmove', handleOnMove, {
+  passive: true,
+});
+right.addEventListener('touchmove', handleOnMove, {
+  passive: true,
+});
 
-// 4. Efeito de fade in do texto
+// Efeito de fade in do texto
 function reveal() {
   const revealElement = document.querySelector('.reveal');
 
