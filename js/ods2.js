@@ -15,9 +15,6 @@ for (let i = 0; i < thumbsAction.length; i++) {
   });
 }
 
-// // Just to initialize item
-// thumbsAction[1].click();
-
 function hexToRgb(hex) {
   // Remove o caractere # do início do valor hexadecimal, se estiver presente
   hex = hex.replace('#', '');
