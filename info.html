@@ -1,58 +1,458 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Fome Global | Problemas e Impactos</title>
-</head>
+    <!-- GeoCharts -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
 
-<body class="d-flex flex-column min-vh-100">
-  <!-- NAVIGATION -->
-  <nav class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">global&nbsp;<span class="fw-bold primary-color" id="decode"
-          data-value="solution">solution</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
-        aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav-menu">
-        <ul class="navbar-nav my-3 ms-3 ms-md-auto d-flex gap-2 gap-md-4">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./info.html" aria-current="page">Info</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./ods2.html">ODS2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./agrotech.html">Agrotech</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./global-solution.html">Global Solution</a>
-          </li>
-        </ul>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/info.css" />
+
+    <title>Fome Global | Problemas e Impactos</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- NAVIGATION -->
+    <nav
+      class="navbar navbar-expand-md text-bg-dark navbar-dark py-3 py-md-0 fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          >global&nbsp;<span
+            id="decode"
+            class="fw-bold primary-color"
+            data-value="solution"
+            >solution</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+          <ul class="navbar-nav my-3 ms-3 ms-md-auto d-flex gap-2 gap-md-4">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./info.html" aria-current="page"
+                >Info</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ods2.html">ODS2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./agrotech.html">Agrotech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./global-solution.html"
+                >Global Solution</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- FOOTER -->
-  <footer class="container-fluid mt-auto text-center py-4 fw-bold">
-    Todos os direitos reservados. &copy; 2023
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <script src="./js/decode.animation.js"></script>
-</body>
+    </nav>
 
+    <!-- HERO -->
+    <section
+      class="introduction vh-100 w-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="bg-dark rounded col-10 py-4 py-lg-5">
+        <h1 class="text-light text-center">
+          dados e&nbsp;<span class="fw-bold primary-color">estatísticas</span>
+        </h1>
+      </div>
+    </section>
+
+    <main
+      class="d-flex flex-column row-gap-5 align-items-center py-5 text-center"
+    >
+      <!-- INTRODUCTION -->
+      <section
+        class="px-3 px-sm-4 px-lg-5 py-4 py-lg-5 text-light col-11 col-lg-10 d-flex flex-column row-gap-4"
+      >
+        <h2 class="display-6 text-lg-start">Visão Geral</h2>
+        <article class="d-flex flex-column row-gap-2">
+          <p class="lh-lg col-lg-7 text-lg-start">
+            A fome é uma crise global que afeta milhões de pessoas em todo o
+            mundo. De acordo com os dados mais recentes, cerca de 690 milhões de
+            pessoas ainda sofrem de subnutrição crônica, o que representa
+            aproximadamente 8,9% da população mundial.
+          </p>
+          <p class="lh-lg col-lg-7 text-lg-start">
+            As regiões mais afetadas pela fome são principalmente aquelas em
+            desenvolvimento, onde as condições de pobreza extrema são mais
+            prevalentes. A África Subsaariana é a região mais atingida, com mais
+            de 250 milhões de pessoas subnutridas. Outras regiões que enfrentam
+            desafios significativos incluem o Sul da Ásia e partes da América
+            Latina.
+          </p>
+          <p class="lh-lg col-lg-7 text-lg-start">
+            A desnutrição infantil é especialmente preocupante, com
+            aproximadamente 144 milhões de crianças menores de cinco anos
+            sofrendo de desnutrição crônica em todo o mundo.
+          </p>
+        </article>
+      </section>
+
+      <!-- CONTINENT INFO -->
+      <section
+        class="px-3 px-sm-4 px-lg-5 py-4 py-lg-5 text-light d-flex flex-column row-gap-4"
+      >
+        <h2 class="display-6">Global (2020)</h2>
+        <div class="row row-gap-4">
+          <div class="col-lg-6">
+            <legend>População em situação de fome</legend>
+            <div id="regions-div" class="w-100"></div>
+            <i>( Escolha uma região para mais informações )</i>
+          </div>
+
+          <section class="d-flex flex-column row-gap-2 col-lg-6">
+            <h4 id="region-name" class="display-4 text-lg-center"></h4>
+            <article class="px-lg-3">
+              <p id="region-info" class="fs-5 text-lg-start"></p>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <!-- CAUSE AND CONSEQUENCE -->
+      <section
+        class="px-3 px-sm-4 px-lg-5 py-4 py-lg-5 text-light col-11 col-lg-7 d-flex flex-column row-gap-4 align-items-center"
+      >
+        <h2 class="display-6 text-lg-center">Causa e Consequências</h2>
+        <article class="d-flex flex-column row-gap-2 col-lg-10">
+          <p class="lh-lg text-lg-start">
+            A fome é um problema complexo que vai além da simples falta de
+            alimentos. Suas causas estão interligadas a diversos fatores
+            socioeconômicos e políticos, enquanto suas consequências são
+            devastadoras tanto para os indivíduos como para as sociedades como
+            um todo.
+          </p>
+          <p class="lh-lg text-lg-start">
+            As causas da fome são multifacetadas e incluem questões estruturais
+            profundamente enraizadas. A pobreza é uma das principais causas,
+            pois muitas pessoas simplesmente não possuem recursos financeiros
+            suficientes para comprar alimentos adequados. A desigualdade de
+            renda também desempenha um papel significativo, uma vez que impede o
+            acesso equitativo aos recursos e oportunidades necessários para
+            garantir a segurança alimentar.
+          </p>
+          <p class="lh-lg text-lg-start">
+            Além disso, o acesso limitado a recursos básicos, como terra, água e
+            sementes, afeta a produção de alimentos e contribui para a escassez.
+            A falta de infraestrutura agrícola adequada, tecnologia e
+            conhecimento agrícola também são fatores determinantes na
+            produtividade e sustentabilidade da agricultura em muitas regiões.
+          </p>
+          <p class="lh-lg text-lg-start">
+            As consequências da fome são profundamente prejudiciais para os
+            indivíduos e as comunidades. A desnutrição é uma das principais
+            consequências da fome, afetando especialmente crianças e resultando
+            em atrasos no crescimento, problemas de desenvolvimento físico e
+            cognitivo, bem como vulnerabilidade a doenças e infecções.
+          </p>
+          <p class="lh-lg text-lg-start">
+            Além disso, a fome tem um impacto negativo na saúde geral das
+            pessoas, enfraquecendo o sistema imunológico e aumentando o risco de
+            doenças crônicas. A fome também afeta a capacidade de aprendizado e
+            desempenho acadêmico, o que perpetua o ciclo de pobreza e limita as
+            oportunidades futuras.
+          </p>
+          <p class="lh-lg text-lg-start">
+            A fome não é apenas um desafio individual, mas também afeta o tecido
+            social e econômico de uma nação. Países que enfrentam altos níveis
+            de fome sofrem com a perda de produtividade, menor renda nacional e
+            dificuldades para o desenvolvimento sustentável. Além disso, a fome
+            pode levar a instabilidade política e conflitos, agravando ainda
+            mais a situação.
+          </p>
+        </article>
+      </section>
+
+      <!-- SOLUTIONS -->
+      <section
+        class="px-3 px-sm-4 px-lg-5 py-4 py-lg-5 text-light col-11 col-lg-10 d-flex flex-column row-gap-4"
+      >
+        <h2 class="display-6">Iniciativas de Combate à Fome</h2>
+        <div id="carousel-programs" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-programs"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Programas de Segurança Alimentar"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-programs"
+              data-bs-slide-to="1"
+              aria-label="Apoio à Agricultura Sustentável"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-programs"
+              data-bs-slide-to="2"
+              aria-label="Promoção da Igualdade de Gênero"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-programs"
+              data-bs-slide-to="3"
+              aria-label="Parcerias Internacionais"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-programs"
+              data-bs-slide-to="4"
+              aria-label="Educação e Conscientização"
+            ></button>
+          </div>
+          <div class="carousel-inner pb-5">
+            <article class="carousel-item active">
+              <div class="row">
+                <div class="d-flex flex-column row-gap-2">
+                  <h3>Programas de Segurança Alimentar</h3>
+                  <p class="text-lg-start">
+                    Diversos programas de segurança alimentar foram
+                    implementados em diferentes países. Esses programas visam
+                    fornecer alimentos nutritivos para as populações
+                    vulneráveis, como crianças, idosos e comunidades de baixa
+                    renda. Eles incluem distribuição de alimentos, restaurantes
+                    populares, bancos de alimentos e programas de alimentação
+                    escolar.
+                  </p>
+                </div>
+                <figure class="row align-items-center justify-content-center">
+                  <a
+                    class="col-sm-4"
+                    target="_blank"
+                    href="https://www.gov.br/secom/pt-br/assuntos/obrasilvoltou/desenvolvimento/paa-e-recriado-pelo-governo-federal"
+                  >
+                    <img
+                      src="./img/info/food_safety_programa_de_aquisicao_de_alimentos.png"
+                      alt="Programa de Aquisição de Alimentos"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                  <a
+                    class="col-6 col-sm-4"
+                    target="_blank"
+                    href="https://www.prosai.com.br"
+                  >
+                    <img
+                      src="./img/info/food_safety_prosai.png"
+                      alt="Programa de Segurança Alimentar para Idosos"
+                      class="object-fit-contain w-100"
+                  /></a>
+                  <a
+                    class="col-6 col-sm-4"
+                    target="_blank"
+                    href="http://saboresesaberes.injc.ufrj.br"
+                  >
+                    <img
+                      src="./img/info/food_safety_encontro_sabores_e_saberes.png"
+                      alt="Programa de Pós-Graduação em Segurança Alimentar e Nutricional"
+                      class="object-fit-contain w-100"
+                  /></a>
+                </figure>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="row">
+                <div class="d-flex flex-column row-gap-2">
+                  <h3>Apoio à Agricultura Sustentável</h3>
+                  <p>
+                    Investimentos em agricultura sustentável desempenham um
+                    papel fundamental no combate à fome. Iniciativas de
+                    desenvolvimento agrícola e rural estão focadas em melhorar a
+                    produtividade agrícola, aumentar o acesso a recursos e
+                    tecnologias, promover práticas agrícolas sustentáveis e
+                    fortalecer as capacidades dos agricultores locais.
+                  </p>
+                </div>
+                <figure class="row align-items-center justify-content-center">
+                  <a
+                    href="https://www.inpas.org.br"
+                    target="_blank"
+                    class="col-sm-5"
+                  >
+                    <img
+                      src="./img/info/sustainable_agriculture_inpas.png"
+                      alt="Associação Brasileira de Insumos para Agricultura Sustentável"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                  <a
+                    href="https://gaasbrasil.com.br"
+                    target="_blank"
+                    class="col-6 col-sm-2"
+                  >
+                    <img
+                      src="./img/info/sustainable_agriculture_gaas.png"
+                      alt="Grupo Associado de Agricultura Sustentável"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="row">
+                <div class="d-flex flex-column row-gap-2">
+                  <h3>Promoção da Igualdade de Gênero</h3>
+                  <p>
+                    A desigualdade de gênero desempenha um papel significativo
+                    na perpetuação da fome. Iniciativas que promovem a igualdade
+                    de gênero e empoderamento das mulheres são essenciais para
+                    combater a fome. Isso inclui o acesso igualitário a recursos
+                    agrícolas, educação, saúde e oportunidades econômicas.
+                  </p>
+                </div>
+                <figure
+                  class="row align-items-center justify-content-center row-gap-3"
+                >
+                  <a
+                    href="http://www.onumulheres.org.br/ganha-ganha/"
+                    target="_blank"
+                    class="col-sm-4"
+                  >
+                    <img
+                      src="./img/info/equality_promotion_ganha_ganha.png"
+                      alt="Ganha Ganha Igualdade de Gênero Significa Bons Negócios"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                  <a
+                    href="https://movimentomulher360.com.br"
+                    target="_blank"
+                    class="col-sm-4"
+                  >
+                    <img
+                      src="./img/info/equality_promotion_movimento_mulher_360.png"
+                      alt="Movimento Mulher 360 Pelo Avanço da Equidade de Gênero"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="row">
+                <div class="d-flex flex-column row-gap-2">
+                  <h3>Parcerias Internacionais</h3>
+                  <p>
+                    Organizações internacionais, como a Organização das Nações
+                    Unidas para Alimentação e Agricultura (FAO) e o Programa
+                    Mundial de Alimentos (PMA), desempenham um papel crucial na
+                    coordenação de esforços globais de combate à fome. Essas
+                    organizações promovem a cooperação entre os países, fornecem
+                    assistência técnica, apoiam projetos de desenvolvimento e
+                    ajudam na resposta a emergências alimentares.
+                  </p>
+                </div>
+                <figure class="row align-items-center justify-content-center">
+                  <a
+                    href="https://www.fao.org/brasil/pt/"
+                    target="_blank"
+                    class="col-5 col-sm-2"
+                  >
+                    <img
+                      src="./img/info/internacional_aliance_organizacao_das_nacoes_unidas_para_alimentacao_e_agricultura.png"
+                      alt="Organização das Nações Unidas para Alimentação e Agricultura"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                  <a
+                    href="https://centrodeexcelencia.org.br/en/"
+                    target="_blank"
+                    class="col-5 col-sm-2"
+                  >
+                    <img
+                      src="./img/info/internacional_aliance_programa_alimentar_mundial.png"
+                      alt="Programa Alimentar Mundial"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="row">
+                <div class="d-flex flex-column row-gap-2">
+                  <h3>Educação e Conscientização</h3>
+                  <p>
+                    A educação desempenha um papel importante na superação da
+                    fome. Iniciativas de educação e conscientização pública
+                    visam aumentar a compreensão sobre os desafios da fome,
+                    promover escolhas alimentares saudáveis, incentivar o
+                    desperdício zero e engajar a comunidade em ações de combate
+                    à fome.
+                  </p>
+                </div>
+                <figure class="row align-items-center justify-content-center">
+                  <a
+                    href="https://www.worldhungerday.org"
+                    target="_blank"
+                    class="col-6 col-sm-3"
+                  >
+                    <img
+                      src="./img/info/education_and_awareness_world_hunger_day.png"
+                      alt="Dia Mundial da Alimentação"
+                      class="object-fit-contain w-100"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid mt-auto text-center py-4 fw-bold">
+      Todos os direitos reservados. &copy; 2023
+    </footer>
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/info.js"></script>
+    <script src="./js/decode.animation.js"></script>
+  </body>
 </html>
