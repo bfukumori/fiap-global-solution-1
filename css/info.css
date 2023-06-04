@@ -18,6 +18,8 @@ main > section {
   background-color: var(--dark-color);
 }
 
-#regions_div {
-  height: 400px;
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.3rem;
+  }
 }
