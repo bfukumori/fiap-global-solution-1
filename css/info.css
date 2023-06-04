@@ -1,0 +1,25 @@
+.introduction {
+  background-image: url("../img/info/pattern.jpg");
+  background-size: cover;
+}
+
+main {
+  background-image: linear-gradient(
+    to bottom,
+    #243b55,
+    #20334b,
+    #1c2c42,
+    #182539,
+    #141e30
+  );
+}
+
+main > section {
+  background-color: var(--dark-color);
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.3rem;
+  }
+}

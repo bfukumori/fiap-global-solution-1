@@ -5,6 +5,7 @@
   --mid-color: #9d9d9d;
   --light-color: #efefef;
   --dark-color: #111111;
+  --primary-hover: rgba(166, 209, 59, 0.2);
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 /* COMPANIES CAROUSEL */
 .company-section {
   position: relative;
-  max-height: 400px;
+  max-height: 420px;
 }
 
 .company-content {
@@ -102,8 +103,84 @@ body {
 }
 
 /* HEADER */
+article {
+  position: relative;
+}
+
+#article-1::before {
+  display: block;
+  content: '';
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  opacity: 0.05;
+  background-color: var(--tertiary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -70%);
+}
+
+#article-2::before,
+#article-2::after {
+  display: block;
+  content: '';
+  border-radius: 16px;
+  width: 50%;
+  height: 4px;
+  margin: 24px 0;
+  background-color: var(--tertiary-color);
+  transform: translateX(50%);
+  opacity: 0.5;
+}
+
+#article-2::before {
+  top: -24px;
+}
+
+#article-2::after {
+  bottom: 0;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 /* FOOTER */
 footer {
   background-color: var(--primary-color);
+}
+
+/* ACCORDION */
+
+.accordion-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem var(--primary-color);
 }
