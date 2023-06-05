@@ -10,7 +10,7 @@ const regionInfo = document.querySelector("#region-info");
 regionName.textContent = data[0].country.f;
 regionInfo.innerHTML = data[0].hungryText;
 
-function dataWithSufix(value, suffix) {
+function dataWithSuffix(value, suffix) {
   return { v: value, f: `${value}${suffix}` };
 }
 
@@ -18,8 +18,8 @@ function generateGoogleData(dataset) {
   return dataset.map((row) => [
     row.code,
     row.country,
-    dataWithSufix(row.hungryCount, " Milhões de pessoas"),
-    dataWithSufix(row.population, " Milhões de pessoas"),
+    dataWithSuffix(row.hungryCount, " Milhões de pessoas"),
+    dataWithSuffix(row.population, " Milhões de pessoas"),
   ]);
 }
 
