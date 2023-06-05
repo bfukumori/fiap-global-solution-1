@@ -2,7 +2,11 @@ const thumbsAction = document.getElementsByClassName("thumb-plataforma");
 const actionsContainer = document.getElementById("ods-tab");
 
 function handleActionSelection(item) {
-  const backGroundData = item.attributes["data-backgroud"].value;
+  const backGroundData = item.getAttribute('data-background');
+  setBackgroundCollor(backGroundData)
+}
+
+function setBackgroundCollor(backGroundData) {
   const outLineStyle = `1px solid ${backGroundData}`;
   actionsContainer.style.outline = outLineStyle;
   actionsContainer.style.backgroundColor = hexToRgb(backGroundData);
@@ -15,8 +19,12 @@ for (let i = 0; i < thumbsAction.length; i++) {
   });
 }
 
-// // Just to initialize item
-// thumbsAction[1].click();
+// Just to initialize item on ODS 2 selected
+function initialize() {
+  window.addEventListener('resize', handleResize);
+  const ods2Action = document.getElementById("ods-2-tab")
+  handleActionSelection(ods2Action)
+}
 
 function hexToRgb(hex) {
   // Remove o caractere # do início do valor hexadecimal, se estiver presente
@@ -47,4 +55,6 @@ function handleResize() {
     thumbsAction[1].click();
   }
 }
-window.addEventListener('resize', handleResize);
+
+// Initialize
+initialize();
