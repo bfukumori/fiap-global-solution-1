@@ -1,4 +1,3 @@
-
 .disclaimer {
   display: flex;
   flex-direction: column;
@@ -19,137 +18,134 @@
 }
 
 .thumbs-plataformas {
-    display: -webkit-flex;
-    /* Safari */
-    display: flex;
-    outline: 1px solid hotpink;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  outline: 1px solid hotpink;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .thumb-plataforma {
-    height: 120px;
-    width: 120px;
-    margin-left: -70px;
-    -webkit-transition: margin-left 0.3s ease;
-    /* Safari */
-    transition: margin-left 0.3s ease;
-    box-sizing: border-box;
-    background-size: cover;
-    cursor: pointer;
-    background-position-x: -7px;
-  }
+.thumb-plataforma {
+  height: 120px;
+  width: 120px;
+  margin-left: -70px;
+  -webkit-transition: margin-left 0.3s ease;
+  /* Safari */
+  transition: margin-left 0.3s ease;
+  box-sizing: border-box;
+  background-size: cover;
+  cursor: pointer;
+  background-position-x: -7px;
+}
 
-  .thumb-plataforma:first-of-type,
-  .thumbs-plataformas:hover .thumb-plataforma:first-of-type {
-    margin-left: 0;
-  }
+.thumb-plataforma:first-of-type,
+.thumbs-plataformas:hover .thumb-plataforma:first-of-type {
+  margin-left: 0;
+}
 
-  .thumbs-plataformas:hover .thumb-plataforma
-  {
-    margin-left: -40px;
-  }
+.thumbs-plataformas:hover .thumb-plataforma {
+  margin-left: -40px;
+}
 
-  .thumb-plataforma[aria-selected="true"] {
-    margin-left: 10px;
-    -webkit-box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.75);
-    height: 140px;
-    width: 140px;
-    z-index: 100;
-    background-position-x: 0;
-  }
+.thumb-plataforma[aria-selected='true'] {
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 31px -4px rgba(0, 0, 0, 0.75);
+  height: 140px;
+  width: 140px;
+  z-index: 100;
+  background-position-x: 0;
+}
 
-  .thumb-plataforma[aria-selected="true"]+.thumb-plataforma {
-    margin-left: 10px;
-  }
+.thumb-plataforma[aria-selected='true'] + .thumb-plataforma {
+  margin-left: 10px;
+}
 
-  .action-1 {
-    background-image: url('/img/ods/poverty-erradication.png');
-  }
+.action-1 {
+  background-image: url('../img/ods/poverty-erradication.png');
+}
 
-  .action-2 {
-    background-image: url('/img/ods/zero-hunger.png');
-  }
+.action-2 {
+  background-image: url('../img/ods/zero-hunger.png');
+}
 
-  .action-3 {
-    background-image: url('/img/ods/well-being.png');
-  }
+.action-3 {
+  background-image: url('../img/ods/well-being.png');
+}
 
-  .action-4 {
-    background-image: url('/img/ods/education.png');
-  }
+.action-4 {
+  background-image: url('../img/ods/education.png');
+}
 
-  .action-5 {
-    background-image: url('/img/ods/gender-equality.png');
-  }
+.action-5 {
+  background-image: url('../img/ods/gender-equality.png');
+}
 
-  .action-6 {
-    background-image: url('/img/ods/potable-water-sanitation.png');
-  }
+.action-6 {
+  background-image: url('../img/ods/potable-water-sanitation.png');
+}
 
-  .action-7 {
-    background-image: url('/img/ods/clean-energy.png');
-  }
+.action-7 {
+  background-image: url('../img/ods/clean-energy.png');
+}
 
-  .action-8 {
-    background-image: url('/img/ods/economic-growth.png');
-  }
+.action-8 {
+  background-image: url('../img/ods/economic-growth.png');
+}
 
-  .action-9 {
-    background-image: url('/img/ods/industry-innovation-infrasctructure.png');
-  }
+.action-9 {
+  background-image: url('../img/ods/industry-innovation-infrasctructure.png');
+}
 
-  .action-10 {
-    background-image: url('/img/ods/inequality-reduction.jpg');
-  }
+.action-10 {
+  background-image: url('../img/ods/inequality-reduction.jpg');
+}
 
-  .action-11 {
-    background-image: url('/img/ods/sustaintability.png');
-  }
+.action-11 {
+  background-image: url('../img/ods/sustaintability.png');
+}
 
-  .action-12 {
-    background-image: url('/img/ods/sustainable-consumption-production.png');
-  }
+.action-12 {
+  background-image: url('../img/ods/sustainable-consumption-production.png');
+}
 
-  .action-13 {
-    background-image: url('/img/ods/climate-change.png');
-  }
+.action-13 {
+  background-image: url('../img/ods/climate-change.png');
+}
 
-  .action-14 {
-    background-image: url('/img/ods/aquatic-life.png');
-  }
+.action-14 {
+  background-image: url('../img/ods/aquatic-life.png');
+}
 
-  .action-15 {
-    background-image: url('/img/ods/terrestrial-life.png');
-  }
+.action-15 {
+  background-image: url('../img/ods/terrestrial-life.png');
+}
 
-  .action-16 {
-    background-image: url('/img/ods/peace-justice.png');
-  }
+.action-16 {
+  background-image: url('../img/ods/peace-justice.png');
+}
 
-  .action-17 {
-    background-image: url('/img/ods/partnerships.png');
-  }
+.action-17 {
+  background-image: url('../img/ods/partnerships.png');
+}
 
-  .content {
-    text-align: justify;
-  }
+.content {
+  text-align: justify;
+}
 
-  .content h1 {
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
+.content h1 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 
-  .content h3 {
-    font-weight: 600;
-  }
+.content h3 {
+  font-weight: 600;
+}
 
-  .content p span {
-    font-weight: 600;
-  }
-
-  
+.content p span {
+  font-weight: 600;
+}
